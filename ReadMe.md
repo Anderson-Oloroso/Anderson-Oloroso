@@ -4,7 +4,7 @@
 
 <div align="center">
 
-# ¡Hola! Soy Henrik Anderson Oloroso García 👾
+# Soy Henrik Anderson Oloroso García 👾
 
 ![Banner](https://img.shields.io/badge/Guatemala-🇬🇹-blue)   
 Desarrollador Full Stack en proceso de formación | Ciudad de Guatemala 🌐
@@ -32,8 +32,10 @@ Desarrollador Full Stack en proceso de formación | Ciudad de Guatemala 🌐
 ![GitKraken](https://img.shields.io/badge/GitKraken-179287?style=for-the-badge&logo=gitkraken&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
+
 </div>
 
+
 ## 📫 Contáctame
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/anderson-oloroso)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](www.linkedin.com/in/anderson-oloroso-b45519327)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:o.and871@gmail.com)
