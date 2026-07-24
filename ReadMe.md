@@ -85,8 +85,17 @@
 
 <div align="center">
 
-  <img src="https://github-readme-stats.vercel.app/api?username=Anderson-Oloroso&show_icons=true&theme=radial&hide_border=true" alt="Estadísticas de GitHub" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anderson-Oloroso&layout=compact&theme=radial&hide_border=true" alt="Lenguajes más usados" width="45%" />
+  ### ⚡ Historial y Frecuencia de Código
+
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Anderson-Oloroso&theme=react-dark&hide_border=true" alt="Gráfico de Actividad de Código" width="100%" />
+
+</div>
+
+## 📊 Resumen de Actividad 3D
+
+<div align="center">
+
+  <img src="./profile-3d-contrib/profile-night-view.svg" alt="Gráfico de Contribuciones 3D Neón - Anderson Oloroso" width="100%" />
 
 </div>
 
