@@ -91,11 +91,9 @@
 
 </div>
 
-## 📊 Resumen de Actividad 3D
-
 <div align="center">
 
-  <img src="./profile-3d-contrib/profile-night-view.svg" alt="Gráfico de Contribuciones 3D Neón - Anderson Oloroso" width="100%" />
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="Gráfico de Contribuciones 3D Arcoíris - Anderson Oloroso" width="100%" />
 
 </div>
 
