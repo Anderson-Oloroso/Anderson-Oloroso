@@ -22,7 +22,7 @@
 
   <br /><br />
 
-  > *Desarrollador enfocado en la resolución eficiente de problemas, pensamiento crítico y aprendizaje continuo. Apasionado por la creación de soluciones funcionales mediante código limpio e innovación tecnológica.*
+  > *Desarrollador enfocado en la resolución eficiente de problemas, pensamiento crítico y aprendizaje continuo. Apasionado por la creación de soluciones funcionales mediante código limpio, arquitectura de datos e innovación tecnológica.*
 
 </div>
 
@@ -33,6 +33,7 @@
 ## 🎯 Sobre Mí
 
 * 🔭 Actualmente perfeccionando mis habilidades en la construcción de aplicaciones Full Stack.
+* ⚡ Especializándome en **automatización de procesos y flujos de trabajo con n8n**, integrando bots de Telegram, Google Sheets y webhooks.
 * 💡 Interesado en la optimización de flujos con **Prompt Engineering** y el desarrollo backend/frontend integrado.
 * 🤝 Abierto a participar en proyectos colaborativos y oportunidades laborales donde pueda aportar valor y continuar mi crecimiento profesional.
 
@@ -59,6 +60,12 @@
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
 <img src="https://img.shields.io/badge/phpMyAdmin-6C783F?style=for-the-badge&logo=phpmyadmin&logoColor=white" alt="phpMyAdmin" />
 
+### **Automatización & Workflows**
+<img src="https://img.shields.io/badge/n8n-FF6D5A?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
+<img src="https://img.shields.io/badge/Telegram_Bot_API-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram API" />
+<img src="https://img.shields.io/badge/Google_Sheets_API-34A853?style=for-the-badge&logo=googlesheets&logoColor=white" alt="Google Sheets" />
+<img src="https://img.shields.io/badge/Webhooks-000000?style=for-the-badge&logo=webhooks&logoColor=white" alt="Webhooks" />
+
 ### **Herramientas & Especialidades**
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
@@ -71,10 +78,11 @@
 
 ---
 
-## 🚀 Proyectos Destacados
+## 🚀 Proyectos & Flujos Destacados
 
 | Proyecto | Descripción | Enlace |
 | :--- | :--- | :---: |
+| **🤖 TutorBot & Automations (n8n)** | Bot educativo automatizado con n8n, manejo de subflujos personalizados, procesamiento con nodos JS e integración con Telegram y Google Sheets. | [💻 Ver Repositorio](https://github.com/Anderson-Oloroso/Proyecto_TutorBot_AguilarDaniel_OlorosoHenrik.git) |
 | **📚 Administrador de Libros, Películas y Música** | Sistema de control y gestión de bases de datos para administrar catálogos multimedia. | [💻 Ver Repositorio](https://github.com/Anderson-Oloroso/AdminLibros.git) |
 | **🏪 Administrador de Inventarios** | Aplicación orientada a la gestión y control de inventarios para pequeñas tiendas y negocios. | [💻 Ver Repositorio](https://github.com/Anderson-Oloroso/TallerInventarioTienda.git) |
 | **🎮 Ranking de Videojuegos** | Algoritmo y sistema de filtrado que procesa listas de videojuegos para mostrar el TOP 3 con mejores valoraciones. | [💻 Ver Repositorio](https://github.com/Anderson-Oloroso/RankingVideojuegos.git) |
@@ -91,26 +99,27 @@
 
   <br /><br />
 
+  ### 🧊 Métricas de Contribución & Actividad 3D
+
   <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="Gráfico de Contribuciones 3D Arcoíris - Anderson Oloroso" width="100%" />
 
 </div>
 
 ---
 
+<!-- Footer Terminal Interactivo Neón (Español) -->
 <div align="center">
 
-  ### 📬 ¡Conectemos y construyamos algo increíble juntos!
-  
-  <a href="https://www.linkedin.com/in/anderson-oloroso-b45519327" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:o.and871@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=16&pause=1000&color=00F5FF&center=true&vCenter=true&width=550&lines=Desarrollando+Aplicaciones+Full+Stack...;Automatizando+Flujos+de+Trabajo+con+n8n...;Creando+C%C3%B3digo+Limpio+y+Bases+de+Datos...;%C2%A1Conectemos+y+construyamos+algo+incre%C3%ADble!" alt="Terminal Typing Animation" />
+
+  <br /><br />
+
+  <a href="https://github.com/Anderson-Oloroso">
+    <img src="https://profile-counter.glitch.me/Anderson-Oloroso/count.svg" alt="Contador de Visitas del Sistema" />
   </a>
 
   <br /><br />
 
-  <!-- Contador de vistas dinámico -->
-  <img src="https://komarev.com/ghpvc/?username=Anderson-Oloroso&color=0077B5&style=flat-square&label=Vistas+del+Perfil" alt="Contador de vistas" />
+  <sub><b>Henrik Anderson Oloroso García</b> • Desarrollador Full Stack & Automatización</sub>
 
 </div>
