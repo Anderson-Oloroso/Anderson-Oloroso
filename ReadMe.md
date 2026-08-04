@@ -1,5 +1,10 @@
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0f172a,50:0891b2,100:22c55e&text=Henrik+Anderson+Oloroso&fontColor=ffffff&fontSize=42&fontAlignY=38&desc=Desarrollador+Full+Stack+Junior&descAlignY=58&descSize=18" alt="Henrik Anderson Oloroso García - Desarrollador Full Stack Junior" width="100%" />
+</div>
 
+<br />
+
+<div align="center">
   <!-- Saludo animado e imagen de perfil -->
   <img src="https://raw.githubusercontent.com/MartinMuzatko/gif-me-more-assets/master/assets/wave.gif" width="30" alt="Waving Hand" />
   
@@ -7,23 +12,29 @@
 
   <img src="image.png?raw=true" width="180" height="180" alt="Henrik Anderson Oloroso García" style="border-radius: 50%; object-fit: cover; box-shadow: 0px 4px 15px rgba(0,0,0,0.3);" />
 
-  # Henrik Anderson Oloroso García <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
-
-  ### 🚀 Desarrollador Full Stack Junior
-  📍 **Ciudad de Guatemala, Guatemala 🇬🇹**
-
-  <!-- Badges de Contacto -->
-  <a href="https://www.linkedin.com/in/anderson-oloroso-b45519327" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:o.and871@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-  </a>
-
   <br /><br />
 
-  > *Desarrollador enfocado en la resolución eficiente de problemas, pensamiento crítico y aprendizaje continuo. Apasionado por la creación de soluciones funcionales mediante código limpio, arquitectura de datos e innovación tecnológica.*
+  <a href="https://anderson-oloroso.github.io/">
+    <img src="https://img.shields.io/badge/Portafolio-Disponible-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portafolio" />
+  </a>
+  <a href="https://github.com/Anderson-Oloroso?tab=repositories">
+    <img src="https://img.shields.io/badge/Proyectos-GitHub-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=Anderson-Oloroso&style=for-the-badge&color=0891b2&label=VISITAS" alt="Profile views" />
+</div>
 
+<h1 align="center">Hola, soy Henrik Anderson Oloroso García</h1>
+
+<p align="center">
+  <strong>🚀 Desarrollador Full Stack Junior | 📍 Ciudad de Guatemala, Guatemala 🇬🇹</strong>
+  <br /><br />
+  > <em>Desarrollador enfocado en la resolución eficiente de problemas, pensamiento crítico y aprendizaje continuo. Apasionado por la creación de soluciones funcionales mediante código limpio, arquitectura de datos e innovación tecnológica.</em>
+</p>
+
+<div align="center">
+  <a href="https://github.com/Anderson-Oloroso">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2600&pause=800&color=22C55E&center=true&vCenter=true&width=980&lines=Desarrollando+Aplicaciones+Full+Stack...;Automatizando+Flujos+de+Trabajo+con+n8n...;Creando+C%C3%B3digo+Limpio+y+Bases+de+Datos...;%C2%A1Conectemos+y+construyamos+algo+incre%C3%ADble!" alt="Typing SVG" />
+  </a>
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-db036000-a547-11eb-8589-3a92c709205e.gif" width="100%" alt="Barra divisora animada" />
@@ -39,7 +50,34 @@
 
 ---
 
-## 🛠️ Habilidades & Tecnologías
+## Qué hago
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3>Desarrollo Full Stack</h3>
+      <p>Construcción de aplicaciones web interactivas y funcionales combinando tecnologías modernas de frontend con arquitecturas sólidas en backend.</p>
+    </td>
+    <td width="50%">
+      <h3>Proyectos y soluciones</h3>
+      <p>Creación de herramientas prácticas para gestión de inventarios, administración de datos multimedia y filtrado eficiente de listas.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>Automatización con n8n</h3>
+      <p>Optimización de flujos de trabajo e integración de Telegram Bots, Webhooks y Google Sheets API mediante n8n y nodos personalizados.</p>
+    </td>
+    <td width="50%">
+      <h3>Aprendizaje continuo</h3>
+      <p>Especialización constante en Prompt Engineering, diseño de bases de datos avanzadas e implementación de estándares de código limpio.</p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Áreas de enfoque & Badges
 
 <div align="center">
 
@@ -78,22 +116,51 @@
 
 ---
 
-## 🚀 Proyectos & Flujos Destacados
+## 🚀 Proyectos Destacados
 
-| Proyecto | Descripción | Enlace |
-| :--- | :--- | :---: |
-| **🤖 TutorBot & Automations (n8n)** | Bot educativo automatizado con n8n, manejo de subflujos personalizados, procesamiento con nodos JS e integración con Telegram y Google Sheets. | [💻 Ver Repositorio](https://github.com/Anderson-Oloroso/Proyecto_TutorBot_AguilarDaniel_OlorosoHenrik.git) |
-| **📚 Administrador de Libros, Películas y Música** | Sistema de control y gestión de bases de datos para administrar catálogos multimedia. | [💻 Ver Repositorio](https://github.com/Anderson-Oloroso/AdminLibros.git) |
-| **🏪 Administrador de Inventarios** | Aplicación orientada a la gestión y control de inventarios para pequeñas tiendas y negocios. | [💻 Ver Repositorio](https://github.com/Anderson-Oloroso/TallerInventarioTienda.git) |
-| **🎮 Ranking de Videojuegos** | Algoritmo y sistema de filtrado que procesa listas de videojuegos para mostrar el TOP 3 con mejores valoraciones. | [💻 Ver Repositorio](https://github.com/Anderson-Oloroso/RankingVideojuegos.git) |
+<table>
+  <tr>
+    <td width="50%">
+      <h3>🤖 TutorBot & Automations (n8n)</h3>
+      <p>Bot educativo automatizado con n8n, manejo de subflujos personalizados, procesamiento con nodos JS e integración con Telegram y Google Sheets.</p>
+      <p><strong>Stack:</strong> n8n, Telegram API, Google Sheets API, JS</p>
+      <a href="https://github.com/Anderson-Oloroso/Proyecto_TutorBot_AguilarDaniel_OlorosoHenrik.git"> Ver Repositorio</a>
+    </td>
+    <td width="50%">
+      <h3>📚 Administrador de Libros, Películas y Música</h3>
+      <p>Sistema de control y gestión de bases de datos para administrar catálogos multimedia de forma eficiente.</p>
+      <p><strong>Stack:</strong> SQL, MySQL, Python</p>
+      <a href="https://github.com/Anderson-Oloroso/AdminLibros.git"> Ver Repositorio</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>🏪 Administrador de Inventarios</h3>
+      <p>Aplicación orientada a la gestión y control de inventarios para pequeñas tiendas y negocios locales.</p>
+      <p><strong>Stack:</strong> Python, SQL, C++</p>
+      <a href="https://github.com/Anderson-Oloroso/TallerInventarioTienda.git"> Ver Repositorio</a>
+    </td>
+    <td width="50%">
+      <h3>🎮 Ranking de Videojuegos</h3>
+      <p>Algoritmo y sistema de filtrado que procesa listas de videojuegos para mostrar el TOP 3 con mejores valoraciones.</p>
+      <p><strong>Stack:</strong> C++, Algoritmos de Filtrado</p>
+      <a href="https://github.com/Anderson-Oloroso/RankingVideojuegos.git"> Ver Repositorio</a>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 📊 Estadísticas de GitHub
+## Actividad en GitHub & Gráficos
 
 <div align="center">
 
-  ### ⚡ Historial y Frecuencia de Código
+  ### ⚡ Estadísticas & Racha
+  <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub streak" />
+
+  <br /><br />
+
+  ### 📈 Historial y Frecuencia de Código
 
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Anderson-Oloroso&theme=react-dark&hide_border=true" alt="Gráfico de Actividad de Código" width="100%" />
 
@@ -106,19 +173,18 @@
 </div>
 
 ---
-
-<!-- Footer Terminal Interactivo Neón (Español) -->
+## 📫 Contacto & Redes
 <div align="center">
-
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=16&pause=1000&color=00F5FF&center=true&vCenter=true&width=550&lines=Desarrollando+Aplicaciones+Full+Stack...;Automatizando+Flujos+de+Trabajo+con+n8n...;Creando+C%C3%B3digo+Limpio+y+Bases+de+Datos...;%C2%A1Conectemos+y+construyamos+algo+incre%C3%ADble!" alt="Terminal Typing Animation" />
-
-  <br /><br />
-
-  <a href="https://github.com/Anderson-Oloroso">
-    <img src="https://profile-counter.glitch.me/Anderson-Oloroso/count.svg" alt="Contador de Visitas del Sistema" />
+  
+  <a href="https://www.linkedin.com/in/anderson-oloroso-b45519327" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-
-  <br /><br />
+  <a href="mailto:o.and871@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+  <a href="https://github.com/Anderson-Oloroso">
+    <img src="https://img.shields.io/badge/GitHub-Anderson--Oloroso-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
 
   <sub><b>Henrik Anderson Oloroso García</b> • Desarrollador Full Stack & Automatización</sub>
 
