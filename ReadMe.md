@@ -56,7 +56,7 @@
   <tr>
     <td width="50%">
       <h3>Desarrollo Full Stack</h3>
-      <p>Construcción de aplicaciones web interactivas y funcionales combinando tecnologías modernas de frontend con arquitecturas sólidas en backend.</p>
+      <p>Construcción de páginas web interactivas con las tres tecnologías principales, las cuales son HTML, CSS y JavaScript, de programas de consola y desarrollo y modelado de datos con MySQL.</p>
     </td>
     <td width="50%">
       <h3>Proyectos y soluciones</h3>
@@ -77,7 +77,7 @@
 
 ---
 
-## Áreas de enfoque & Badges
+## Conocimientos adquiridos y herramientas usadas
 
 <div align="center">
 
@@ -95,7 +95,6 @@
 ### **Bases de Datos & Administración**
 <img src="https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=database&logoColor=white" alt="SQL" />
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
 <img src="https://img.shields.io/badge/phpMyAdmin-6C783F?style=for-the-badge&logo=phpmyadmin&logoColor=white" alt="phpMyAdmin" />
 
 ### **Automatización & Workflows**
@@ -129,21 +128,35 @@
     <td width="50%">
       <h3>📚 Administrador de Libros, Películas y Música</h3>
       <p>Sistema de control y gestión de bases de datos para administrar catálogos multimedia de forma eficiente.</p>
-      <p><strong>Stack:</strong> SQL, MySQL, Python</p>
+      <p><strong>Stack:</strong> Python</p>
       <a href="https://github.com/Anderson-Oloroso/AdminLibros.git"> Ver Repositorio</a>
     </td>
   </tr>
   <tr>
-    <td width="50%">
+    <td width="50%" valign="top">
       <h3>🏪 Administrador de Inventarios</h3>
       <p>Aplicación orientada a la gestión y control de inventarios para pequeñas tiendas y negocios locales.</p>
-      <p><strong>Stack:</strong> Python, SQL, C++</p>
+      <p><strong>Stack:</strong> Python</p>
       <a href="https://github.com/Anderson-Oloroso/TallerInventarioTienda.git"> Ver Repositorio</a>
     </td>
-    <td width="50%">
+    <td width="50%" valign="top">
       <h3>🎮 Ranking de Videojuegos</h3>
       <p>Algoritmo y sistema de filtrado que procesa listas de videojuegos para mostrar el TOP 3 con mejores valoraciones.</p>
-      <p><strong>Stack:</strong> C++, Algoritmos de Filtrado</p>
+      <p><strong>Stack:</strong> Javascript</p>
+      <a href="https://github.com/Anderson-Oloroso/RankingVideojuegos.git"> Ver Repositorio</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Campus - Pizza 🍕</h3>
+      <p>Campus Pizza es un sistema de gestión de base de datos relacional diseñado para modelar de manera eficiente la operación de una pizzería comercial.</p>
+      <p><strong>Stack:</strong> SQL</p>
+      <a href="https://github.com/Anderson-Oloroso/campus_pizza.git"> Ver Repositorio</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Parqueo Tu favorito 🚗</h3>
+      <p>Aplicacion de JS combinado con HTML5 Y CSS3 para llevar un control de los datos de un parqueo.</p>
+      <p><strong>Stack:</strong> Javascript, HTML5 y CSS3</p>
       <a href="https://github.com/Anderson-Oloroso/RankingVideojuegos.git"> Ver Repositorio</a>
     </td>
   </tr>
@@ -166,7 +179,7 @@
 
   <br /><br />
 
-  ### 🧊 Métricas de Contribución & Actividad 3D
+  ### 🧊 Métricas de Contribución & Actividad 
 
   <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="Gráfico de Contribuciones 3D Arcoíris - Anderson Oloroso" width="100%" />
 
