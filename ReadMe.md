@@ -123,13 +123,13 @@
       <h3>🤖 TutorBot & Automations (n8n)</h3>
       <p>Bot educativo automatizado con n8n, manejo de subflujos personalizados, procesamiento con nodos JS e integración con Telegram y Google Sheets.</p>
       <p><strong>Stack:</strong> n8n, Telegram API, Google Sheets API, JS</p>
-      <a href="https://github.com/Anderson-Oloroso/Proyecto_TutorBot_AguilarDaniel_OlorosoHenrik.git"> Ver Repositorio</a>
+      <a href="https://github.com/Anderson-Oloroso/proyecto-tutorbot.git"> Ver Repositorio</a>
     </td>
     <td width="50%">
       <h3>📚 Administrador de Libros, Películas y Música</h3>
       <p>Sistema de control y gestión de bases de datos para administrar catálogos multimedia de forma eficiente.</p>
       <p><strong>Stack:</strong> Python</p>
-      <a href="https://github.com/Anderson-Oloroso/AdminLibros.git"> Ver Repositorio</a>
+      <a href="https://github.com/Anderson-Oloroso/admin-libros-musicas-pelis.git"> Ver Repositorio</a>
     </td>
   </tr>
   <tr>
@@ -137,13 +137,13 @@
       <h3>🏪 Administrador de Inventarios</h3>
       <p>Aplicación orientada a la gestión y control de inventarios para pequeñas tiendas y negocios locales.</p>
       <p><strong>Stack:</strong> Python</p>
-      <a href="https://github.com/Anderson-Oloroso/TallerInventarioTienda.git"> Ver Repositorio</a>
+      <a href="https://github.com/Anderson-Oloroso/inventario-tienda.git"> Ver Repositorio</a>
     </td>
     <td width="50%" valign="top">
       <h3>🎮 Ranking de Videojuegos</h3>
       <p>Algoritmo y sistema de filtrado que procesa listas de videojuegos para mostrar el TOP 3 con mejores valoraciones.</p>
       <p><strong>Stack:</strong> Javascript</p>
-      <a href="https://github.com/Anderson-Oloroso/RankingVideojuegos.git"> Ver Repositorio</a>
+      <a href="https://github.com/Anderson-Oloroso/ranking-videojuegos.git"> Ver Repositorio</a>
     </td>
   </tr>
   <tr>
@@ -151,13 +151,13 @@
       <h3>Campus - Pizza 🍕</h3>
       <p>Campus Pizza es un sistema de gestión de base de datos relacional diseñado para modelar de manera eficiente la operación de una pizzería comercial.</p>
       <p><strong>Stack:</strong> SQL</p>
-      <a href="https://github.com/Anderson-Oloroso/campus_pizza.git"> Ver Repositorio</a>
+      <a href="https://github.com/Anderson-Oloroso/campus-pizza.git"> Ver Repositorio</a>
     </td>
     <td width="50%" valign="top">
       <h3>Parqueo Tu favorito 🚗</h3>
       <p>Aplicacion de JS combinado con HTML5 Y CSS3 para llevar un control de los datos de un parqueo.</p>
       <p><strong>Stack:</strong> Javascript, HTML5 y CSS3</p>
-      <a href="https://github.com/Anderson-Oloroso/RankingVideojuegos.git"> Ver Repositorio</a>
+      <a href="https://github.com/Anderson-Oloroso/parqueo-tu-favorito.git"> Ver Repositorio</a>
     </td>
   </tr>
 </table>
