@@ -84,11 +84,16 @@
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
 <img src="https://img.shields.io/badge/VB.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" alt="VB.NET" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/Strapi-4945FF?style=for-the-badge&logo=strapi&logoColor=white" alt="Strapi" />
 
 ### **Bases de Datos & Administración**
 <img src="https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=database&logoColor=white" alt="SQL" />
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
 <img src="https://img.shields.io/badge/phpMyAdmin-6C783F?style=for-the-badge&logo=phpmyadmin&logoColor=white" alt="phpMyAdmin" />
+<img src="https://img.shields.io/badge/pgAdmin-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="pgAdmin" />
+<img src="https://img.shields.io/badge/PL/pgSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PL/pgSQL" />
 
 ### **Automatización & Workflows**
 <img src="https://img.shields.io/badge/n8n-FF6D5A?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
