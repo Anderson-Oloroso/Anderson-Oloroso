@@ -1,15 +1,10 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0f172a,50:0891b2,100:22c55e&text=Henrik+Anderson+Oloroso&fontColor=ffffff&fontSize=42&fontAlignY=38&desc=Desarrollador+Full+Stack+Junior&descAlignY=58&descSize=18" alt="Henrik Anderson Oloroso García - Desarrollador Full Stack Junior" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0f172a,50:0891b2,100:22c55e&text=Henrik+Anderson+Oloroso&fontColor=ffffff&fontSize=42&fontAlignY=38&desc=Técnico+en+desarrollo+de+Software&descAlignY=58&descSize=18" alt="Henrik Anderson Oloroso García - Técnico en desarrollo de Software" width="100%" />
 </div>
 
 <br />
 
 <div align="center">
-  <!-- Saludo animado e imagen de perfil -->
-  <img src="https://raw.githubusercontent.com/MartinMuzatko/gif-me-more-assets/master/assets/wave.gif" width="30" alt="Waving Hand" />
-  
-  <br /><br />
-
   <img src="image.png?raw=true" width="180" height="180" alt="Henrik Anderson Oloroso García" style="border-radius: 50%; object-fit: cover; box-shadow: 0px 4px 15px rgba(0,0,0,0.3);" />
 
   <br /><br />
@@ -26,7 +21,7 @@
 <h1 align="center">Hola, soy Henrik Anderson Oloroso García</h1>
 
 <p align="center">
-  <strong>🚀 Desarrollador Full Stack Junior | 📍 Ciudad de Guatemala, Guatemala 🇬🇹</strong>
+  <strong>🚀 Técnico en desarrollo de Software | 📍 Ciudad de Guatemala, Guatemala 🇬🇹</strong>
   <br /><br />
   > <em>Desarrollador enfocado en la resolución eficiente de problemas, pensamiento crítico y aprendizaje continuo. Apasionado por la creación de soluciones funcionales mediante código limpio, arquitectura de datos e innovación tecnológica.</em>
 </p>
@@ -36,8 +31,6 @@
     <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2600&pause=800&color=22C55E&center=true&vCenter=true&width=980&lines=Desarrollando+Aplicaciones+Full+Stack...;Automatizando+Flujos+de+Trabajo+con+n8n...;Creando+C%C3%B3digo+Limpio+y+Bases+de+Datos...;%C2%A1Conectemos+y+construyamos+algo+incre%C3%ADble!" alt="Typing SVG" />
   </a>
 </div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-db036000-a547-11eb-8589-3a92c709205e.gif" width="100%" alt="Barra divisora animada" />
 
 ---
 
@@ -173,12 +166,6 @@
 
   <br /><br />
 
-  ### 📈 Historial y Frecuencia de Código
-
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Anderson-Oloroso&theme=react-dark&hide_border=true" alt="Gráfico de Actividad de Código" width="100%" />
-
-  <br /><br />
-
   ### 🧊 Métricas de Contribución & Actividad 
 
   <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="Gráfico de Contribuciones 3D Arcoíris - Anderson Oloroso" width="100%" />
@@ -189,7 +176,7 @@
 ## 📫 Contacto & Redes
 <div align="center">
   
-  <a href="https://www.linkedin.com/in/anderson-oloroso-b45519327" target="_blank">
+  <a href="https://www.linkedin.com/in/anderson-oloroso" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:o.and871@gmail.com">
@@ -198,7 +185,4 @@
   <a href="https://github.com/Anderson-Oloroso">
     <img src="https://img.shields.io/badge/GitHub-Anderson--Oloroso-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
-
-  <sub><b>Henrik Anderson Oloroso García</b> • Desarrollador Full Stack & Automatización</sub>
-
 </div>
