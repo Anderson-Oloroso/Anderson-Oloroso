@@ -5,11 +5,7 @@
 <br />
 
 <div align="center">
-  <img src="image.png?raw=true" width="180" height="180" alt="Henrik Anderson Oloroso García" style="border-radius: 50%; object-fit: cover; box-shadow: 0px 4px 15px rgba(0,0,0,0.3);" />
-
-  <br /><br />
-
-  <a href="https://anderson-oloroso.github.io/">
+  <a href="https://anderson-oloroso.github.io/portfolio/">
     <img src="https://img.shields.io/badge/Portafolio-Disponible-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portafolio" />
   </a>
   <a href="https://github.com/Anderson-Oloroso?tab=repositories">
@@ -18,12 +14,11 @@
   <img src="https://komarev.com/ghpvc/?username=Anderson-Oloroso&style=for-the-badge&color=0891b2&label=VISITAS" alt="Profile views" />
 </div>
 
-<h1 align="center">Hola, soy Henrik Anderson Oloroso García</h1>
 
 <p align="center">
   <strong>Técnico en desarrollo de Software | Ciudad de Guatemala, Guatemala</strong>
   <br /><br />
-  <em>Profesional curioso, resiliente y apasionado por la tecnología. Enfocado en el desarrollo de APIs REST, modelado y normalización de bases de datos relacionales, contenerización con Docker, Prompt Engineering y automatización de procesos. Con proyección hacia soluciones de software escalables y ciberseguridad.</em>
+  <em>Hola, soy Henrik Anderson Oloroso García, me defino como un Profesional curioso, resiliente y apasionado por la tecnología. Enfocado en el desarrollo de APIs REST, modelado y normalización de bases de datos relacionales, contenerización con Docker, Prompt Engineering y automatización de procesos. Con proyección hacia soluciones de software escalables y ciberseguridad.</em>
 </p>
 
 <div align="center">
@@ -124,7 +119,7 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>Minerva-lib — Gestor de libros para biblioteca (en desarrollo)</h3>
+      <h3>Minerva-lib — Gestor de libros para biblioteca</h3>
       <p>Aplicación para gestionar libros mediante una API y una interfaz web.</p>
       <p><strong>Stack:</strong> Node.js, Express, MySQL, HTML, CSS, JavaScript y Docker.</p>
       <br />
@@ -211,7 +206,7 @@
   <a href="mailto:o.and871@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-o.and871%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
-  <a href="https://github.com/Anderson-Oloroso">
+  <a href="https://anderson-oloroso.github.io/portfolio/">
     <img src="https://img.shields.io/badge/GitHub-Anderson--Oloroso-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </div>
