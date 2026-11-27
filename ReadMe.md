@@ -8,9 +8,6 @@
   <a href="https://anderson-oloroso.github.io/my-personal-brand/">
     <img src="https://img.shields.io/badge/Portafolio-Ver_Sitio-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portafolio" />
   </a>
-  <a href="https://github.com/Anderson-Oloroso/my-personal-brand">
-    <img src="https://img.shields.io/badge/Repo_Portafolio-my--personal--brand-00F0FF?style=for-the-badge&logo=github&logoColor=020307" alt="Repo my-personal-brand" />
-  </a>
   <a href="https://github.com/Anderson-Oloroso?tab=repositories">
     <img src="https://img.shields.io/badge/Proyectos-GitHub-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
@@ -34,13 +31,17 @@
 
 ## 🎯 Sobre Mí
 
-* Especializado en la creación de APIs REST con Node.js y Express, aplicando asincronía, validación de datos y middlewares.
-* Modelado, normalización y consulta de bases de datos relacionales con PostgreSQL y MySQL, incluyendo procedimientos almacenados y PL/pgSQL.
-* Uso de Docker para la creación de entornos de trabajo y despliegue modular.
-* Automatización de flujos de trabajo con n8n y optimización de tareas mediante Prompt Engineering.
-* Experiencia en soporte técnico, diagnóstico de equipos y optimización de inventarios y registros digitales en el Ministerio de la Defensa Nacional.
-* **Idiomas**: Español (Nativo) | Inglés C1 (Capacidad técnica y fluidez profesional).
-* **Visión**: Crear software eficiente y escalable con especial proyección hacia la ciberseguridad.
+<div align="justify">
+  <ul>
+    <li align="justify">Especializado en la creación de APIs REST con Node.js y Express, aplicando asincronía, validación de datos y middlewares.</li>
+    <li align="justify">Modelado, normalización y consulta de bases de datos relacionales con PostgreSQL y MySQL, incluyendo procedimientos almacenados y PL/pgSQL.</li>
+    <li align="justify">Uso de Docker para la creación de entornos de trabajo y despliegue modular.</li>
+    <li align="justify">Automatización de flujos de trabajo con n8n y optimización de tareas mediante Prompt Engineering.</li>
+    <li align="justify">Experiencia en soporte técnico, diagnóstico de equipos y optimización de inventarios y registros digitales en el Ministerio de la Defensa Nacional.</li>
+    <li align="justify"><strong>Idiomas</strong>: Español (Nativo) | Inglés C1 (Capacidad técnica y fluidez profesional).</li>
+    <li align="justify"><strong>Visión</strong>: Crear software eficiente y escalable con especial proyección hacia la ciberseguridad.</li>
+  </ul>
+</div>
 
 ---
 
@@ -50,21 +51,21 @@
   <tr>
     <td width="50%">
       <h3>Desarrollo de Software</h3>
-      <p>Construcción de páginas web interactivas con HTML, CSS y JavaScript, desarrollo de programas de consola, creación de APIs REST con Node.js y Express, y modelado y consulta de datos en bases de datos relacionales.</p>
+      <p align="justify">Construcción de páginas web interactivas con HTML, CSS y JavaScript, desarrollo de programas de consola, creación de APIs REST con Node.js y Express, y modelado y consulta de datos en bases de datos relacionales.</p>
     </td>
     <td width="50%">
       <h3>Proyectos y Soluciones</h3>
-      <p>Creación de herramientas prácticas para gestión de inventarios, administración de datos multimedia y filtrado eficiente de listas.</p>
+      <p align="justify">Creación de herramientas prácticas para gestión de inventarios, administración de datos multimedia y filtrado eficiente de listas.</p>
     </td>
   </tr>
   <tr>
     <td width="50%">
       <h3>Automatización y Prompt Engineering</h3>
-      <p>Optimización de flujos de trabajo mediante n8n, integración de webhooks, APIs externas y formulación de prompts estructurados para acelerar tareas de desarrollo.</p>
+      <p align="justify">Optimización de flujos de trabajo mediante n8n, integración de webhooks, APIs externas y formulación de prompts estructurados para acelerar tareas de desarrollo.</p>
     </td>
     <td width="50%">
       <h3>Contenedores y Entornos</h3>
-      <p>Configuración de contenedores con Docker para estandarizar entornos de desarrollo y facilitar despliegues consistentes.</p>
+      <p align="justify">Configuración de contenedores con Docker para estandarizar entornos de desarrollo y facilitar despliegues consistentes.</p>
     </td>
   </tr>
 </table>
@@ -123,7 +124,7 @@
   <tr>
     <td width="50%" valign="top">
       <h3>Minerva-lib — Gestor de libros para biblioteca</h3>
-      <p>Aplicación para gestionar libros mediante una API y una interfaz web.</p>
+      <p align="justify">Aplicación para gestionar libros mediante una API y una interfaz web.</p>
       <p><strong>Stack:</strong> Node.js, Express, MySQL, HTML, CSS, JavaScript y Docker.</p>
       <br />
       <a href="https://github.com/Anderson-Oloroso/minerva-lib.git">
@@ -132,7 +133,7 @@
     </td>
     <td width="50%" valign="top">
       <h3>Countries Express Rate Limit — API REST de países</h3>
-      <p>API con operaciones CRUD, validación de datos y límites de solicitudes. Los datos se almacenan en memoria.</p>
+      <p align="justify">API con operaciones CRUD, validación de datos y límites de solicitudes. Los datos se almacenan en memoria.</p>
       <p><strong>Stack:</strong> Node.js, Express, JavaScript y Docker.<br /><strong>Pruebas:</strong> Postman e Insomnia.</p>
       <br />
       <a href="https://github.com/Anderson-Oloroso/countries-express-rate-limit.git">
@@ -143,7 +144,7 @@
   <tr>
     <td width="50%" valign="top">
       <h3>HYDRA GYM CLI — Sistema de gestión para gimnasio</h3>
-      <p>Aplicación interactiva de consola para administrar clientes, planes de entrenamiento, contratos, membresías, seguimiento físico, planes nutricionales e ingresos y egresos. Incluye consultas y cálculos para apoyar la gestión del centro deportivo.</p>
+      <p align="justify">Aplicación interactiva de consola para administrar clientes, planes de entrenamiento, contratos, membresías, seguimiento físico, planes nutricionales e ingresos y egresos. Incluye consultas y cálculos para apoyar la gestión del centro deportivo.</p>
       <p><strong>Stack:</strong> Node.js, JavaScript y MySQL.</p>
       <br />
       <a href="https://github.com/Anderson-Oloroso/hydra-gym.git">
@@ -152,7 +153,7 @@
     </td>
     <td width="50%" valign="top">
       <h3>TechZone — Modelo de base de datos para tienda tecnológica</h3>
-      <p>Proyecto de base de datos para una empresa de productos tecnológicos, con definición de tablas, inserción de datos, procedimientos almacenados y consultas.</p>
+      <p align="justify">Proyecto de base de datos para una empresa de productos tecnológicos, con definición de tablas, inserción de datos, procedimientos almacenados y consultas.</p>
       <p><strong>Stack:</strong> PostgreSQL y PL/pgSQL.</p>
       <br />
       <a href="https://github.com/Anderson-Oloroso/tech-zone.git">
@@ -163,7 +164,7 @@
   <tr>
     <td width="50%" valign="top">
       <h3>TutorBot — Bot de tutorías académicas en Telegram</h3>
-      <p>Automatización para gestionar solicitudes de tutorías y conectar estudiantes con tutores según su disponibilidad, con seguimiento del proceso.</p>
+      <p align="justify">Automatización para gestionar solicitudes de tutorías y conectar estudiantes con tutores según su disponibilidad, con seguimiento del proceso.</p>
       <p><strong>Tecnologías:</strong> n8n y Telegram.</p>
       <br />
       <a href="https://github.com/Anderson-Oloroso/proyecto-tutorbot.git">
@@ -172,7 +173,7 @@
     </td>
     <td width="50%" valign="top">
       <h3>Sistema de gestión de inventario — Python</h3>
-      <p>Aplicación de consola para agregar, listar, actualizar y eliminar productos, además de calcular el valor total del inventario.</p>
+      <p align="justify">Aplicación de consola para agregar, listar, actualizar y eliminar productos, además de calcular el valor total del inventario.</p>
       <p><strong>Stack:</strong> Python.</p>
       <br />
       <a href="https://github.com/Anderson-Oloroso/inventario-tienda.git">
