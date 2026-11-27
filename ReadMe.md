@@ -6,7 +6,7 @@
 
 <div align="center">
   <a href="https://anderson-oloroso.github.io/my-personal-brand/">
-    <img src="https://img.shields.io/badge/Portafolio-Disponible-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portafolio" />
+    <img src="https://img.shields.io/badge/Portafolio-Ver_Sitio-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portafolio" />
   </a>
   <a href="https://github.com/Anderson-Oloroso/my-personal-brand">
     <img src="https://img.shields.io/badge/Repo_Portafolio-my--personal--brand-00F0FF?style=for-the-badge&logo=github&logoColor=020307" alt="Repo my-personal-brand" />
@@ -190,6 +190,13 @@
 
   ### Racha de Contribuciones
   <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub streak" />
+
+  <br /><br />
+
+  ### Gráfica de Contribuciones (Línea de Actividad)
+  <a href="https://github.com/Anderson-Oloroso">
+    <img src="https://github-readme-activity-graph.ashutosh-dwivedi0710.workers.dev/graph?username=Anderson-Oloroso&bg_color=06080f&color=00f0ff&line=00ff88&point=ffffff&area=true&hide_border=true&custom_title=Actividad%20de%20Contribuciones" alt="Gráfica de Contribuciones de GitHub - Anderson-Oloroso" width="100%" />
+  </a>
 
   <br /><br />
 
