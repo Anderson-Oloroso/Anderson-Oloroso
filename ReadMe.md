@@ -5,8 +5,11 @@
 <br />
 
 <div align="center">
-  <a href="https://anderson-oloroso.github.io/portfolio/">
+  <a href="https://anderson-oloroso.github.io/my-personal-brand/">
     <img src="https://img.shields.io/badge/Portafolio-Disponible-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portafolio" />
+  </a>
+  <a href="https://github.com/Anderson-Oloroso/my-personal-brand">
+    <img src="https://img.shields.io/badge/Repo_Portafolio-my--personal--brand-00F0FF?style=for-the-badge&logo=github&logoColor=020307" alt="Repo my-personal-brand" />
   </a>
   <a href="https://github.com/Anderson-Oloroso?tab=repositories">
     <img src="https://img.shields.io/badge/Proyectos-GitHub-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
@@ -206,7 +209,10 @@
   <a href="mailto:o.and871@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-o.and871%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
-  <a href="https://anderson-oloroso.github.io/portfolio/">
-    <img src="https://img.shields.io/badge/GitHub-Anderson--Oloroso-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <a href="https://anderson-oloroso.github.io/my-personal-brand/">
+    <img src="https://img.shields.io/badge/Portafolio_Web-Anderson--Oloroso-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="Portafolio Anderson-Oloroso" />
+  </a>
+  <a href="https://github.com/Anderson-Oloroso/my-personal-brand">
+    <img src="https://img.shields.io/badge/Codigo_Fuente-my--personal--brand-00F0FF?style=for-the-badge&logo=github&logoColor=020307" alt="Repo my-personal-brand" />
   </a>
 </div>
