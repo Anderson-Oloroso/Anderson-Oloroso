@@ -220,7 +220,4 @@
   <a href="https://anderson-oloroso.github.io/my-personal-brand/">
     <img src="https://img.shields.io/badge/Portafolio_Web-Anderson--Oloroso-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="Portafolio Anderson-Oloroso" />
   </a>
-  <a href="https://github.com/Anderson-Oloroso/my-personal-brand">
-    <img src="https://img.shields.io/badge/Codigo_Fuente-my--personal--brand-00F0FF?style=for-the-badge&logo=github&logoColor=020307" alt="Repo my-personal-brand" />
-  </a>
 </div>
