@@ -5,7 +5,7 @@
  */
 
 import { mkdir, writeFile } from 'node:fs/promises';
-import { dirname, resolve } from 'node:path';
+import { resolve } from 'node:path';
 
 const USERNAME = process.env.GITHUB_USERNAME || 'Anderson-Oloroso';
 const TOKEN = process.env.GITHUB_TOKEN;
@@ -16,90 +16,92 @@ const MONTHS_ES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep'
 
 const THEMES = {
   dark: {
-    bgStops: ['#0F172A', '#0D1526', '#0B1222'],
-    cardBorder: 'rgba(8, 145, 178, 0.38)',
-    hairlineStops: ['#0891B2', '#22C55E', '#38BDF8'],
-    titleFill: '#F8FAFC',
-    subtitleFill: '#94A3B8',
-    kpiBg: '#111C33',
-    kpiLabel: '#94A3B8',
-    kpi1Border: 'rgba(34, 197, 94, 0.34)',
-    kpi1Value: '#22C55E',
-    kpi2Border: 'rgba(8, 145, 178, 0.42)',
-    kpi2Value: '#38BDF8',
-    kpi3Border: 'rgba(148, 163, 184, 0.25)',
-    kpi3Value: '#F8FAFC',
-    gridBaseline: 'rgba(8, 145, 178, 0.42)',
-    gridLine: 'rgba(148, 163, 184, 0.14)',
-    yTickHighlight: '#38BDF8',
-    yTickNormal: '#94A3B8',
-    xTickLine: 'rgba(8, 145, 178, 0.36)',
-    xLabelLast: '#F8FAFC',
-    xLabelNormal: '#94A3B8',
-    lineStops: ['#0891B2', '#22C55E', '#38BDF8'],
-    lineGlow: '#0891B2',
-    lineGlowOpacity: '0.24',
+    bgStops: ['#0D1117', '#0F151D', '#101620'],
+    cardBorder: '#30363D',
+    hairlineStops: ['#2A8FA8', '#34A867', '#4BA3C7'],
+    hairlineOpacity: '0.28',
+    titleFill: '#E6EDF3',
+    subtitleFill: '#8B949E',
+    kpiBg: '#161B22',
+    kpiLabel: '#8B949E',
+    kpi1Border: '#30363D',
+    kpi1Value: '#56D364',
+    kpi2Border: '#30363D',
+    kpi2Value: '#79C0FF',
+    kpi3Border: '#30363D',
+    kpi3Value: '#E6EDF3',
+    gridBaseline: '#30363D',
+    gridLine: '#21262D',
+    yTickHighlight: '#9FB4C7',
+    yTickNormal: '#8B949E',
+    xTickLine: '#30363D',
+    xLabelLast: '#E6EDF3',
+    xLabelNormal: '#8B949E',
+    lineStops: ['#2A8FA8', '#34A867', '#4BA3C7'],
+    lineGlow: '#2A8FA8',
+    lineGlowOpacity: '0.10',
     areaStops: [
-      { color: '#22C55E', op: '0.26' },
-      { color: '#0891B2', op: '0.10' },
-      { color: '#0F172A', op: '0.01' }
+      { color: '#2EA043', op: '0.14' },
+      { color: '#0891B2', op: '0.05' },
+      { color: '#0D1117', op: '0.00' }
     ],
-    pointActiveFill: '#FFFFFF',
-    pointActiveStroke: '#22C55E',
-    pointInactiveFill: '#1E293B',
-    pointInactiveStroke: '#475569',
-    pointPeakFill: '#FFFFFF',
-    pointPeakStroke: '#38BDF8',
-    peakHaloFill: 'rgba(8, 145, 178, 0.20)',
-    peakHaloStroke: 'rgba(56, 189, 248, 0.48)',
-    badgeBg: '#0F172A',
-    badgePeakStroke: '#38BDF8',
-    badgePeakText: '#38BDF8',
-    badgeSpikeStroke: 'rgba(34, 197, 94, 0.48)',
-    badgeSpikeText: '#22C55E'
+    pointActiveFill: '#161B22',
+    pointActiveStroke: '#3FB950',
+    pointInactiveFill: '#21262D',
+    pointInactiveStroke: '#30363D',
+    pointPeakFill: '#E6EDF3',
+    pointPeakStroke: '#4BA3C7',
+    peakHaloFill: 'rgba(75, 163, 199, 0.14)',
+    peakHaloStroke: 'rgba(75, 163, 199, 0.30)',
+    badgeBg: '#161B22',
+    badgePeakStroke: '#30363D',
+    badgePeakText: '#79C0FF',
+    badgeSpikeStroke: '#30363D',
+    badgeSpikeText: '#56D364'
   },
   light: {
-    bgStops: ['#FFFFFF', '#F8FAFC', '#F1F5F9'],
-    cardBorder: '#CBD5E1',
-    hairlineStops: ['#0891B2', '#16A34A', '#0284C7'],
-    titleFill: '#0F172A',
-    subtitleFill: '#475569',
-    kpiBg: '#F1F5F9',
-    kpiLabel: '#475569',
-    kpi1Border: 'rgba(22, 163, 74, 0.35)',
-    kpi1Value: '#16A34A',
-    kpi2Border: 'rgba(8, 145, 178, 0.35)',
-    kpi2Value: '#0E7490',
-    kpi3Border: '#CBD5E1',
-    kpi3Value: '#0F172A',
-    gridBaseline: 'rgba(8, 145, 178, 0.45)',
-    gridLine: 'rgba(148, 163, 184, 0.25)',
-    yTickHighlight: '#0E7490',
-    yTickNormal: '#475569',
-    xTickLine: 'rgba(8, 145, 178, 0.40)',
-    xLabelLast: '#0F172A',
-    xLabelNormal: '#475569',
-    lineStops: ['#0E7490', '#16A34A', '#0284C7'],
-    lineGlow: '#0891B2',
-    lineGlowOpacity: '0.16',
+    bgStops: ['#FFFFFF', '#FCFDFF', '#FAFBFC'],
+    cardBorder: '#D0D7DE',
+    hairlineStops: ['#1F7A91', '#2A9255', '#2B82A6'],
+    hairlineOpacity: '0.22',
+    titleFill: '#24292F',
+    subtitleFill: '#57606A',
+    kpiBg: '#F6F8FA',
+    kpiLabel: '#57606A',
+    kpi1Border: '#D0D7DE',
+    kpi1Value: '#2A7E4C',
+    kpi2Border: '#D0D7DE',
+    kpi2Value: '#1F7A91',
+    kpi3Border: '#D0D7DE',
+    kpi3Value: '#24292F',
+    gridBaseline: '#D0D7DE',
+    gridLine: '#EAECEF',
+    yTickHighlight: '#3B6E82',
+    yTickNormal: '#57606A',
+    xTickLine: '#D0D7DE',
+    xLabelLast: '#24292F',
+    xLabelNormal: '#57606A',
+    lineStops: ['#1F7A91', '#2A9255', '#2B82A6'],
+    lineGlow: '#1F7A91',
+    lineGlowOpacity: '0.08',
     areaStops: [
-      { color: '#22C55E', op: '0.20' },
-      { color: '#0891B2', op: '0.07' },
-      { color: '#FFFFFF', op: '0.01' }
+      { color: '#2DA44E', op: '0.11' },
+      { color: '#0891B2', op: '0.04' },
+      { color: '#FFFFFF', op: '0.00' }
     ],
     pointActiveFill: '#FFFFFF',
-    pointActiveStroke: '#16A34A',
-    pointInactiveFill: '#E2E8F0',
-    pointInactiveStroke: '#94A3B8',
+    pointActiveStroke: '#2A9255',
+    pointInactiveFill: '#E5E9EF',
+    pointInactiveStroke: '#CBD5E1',
     pointPeakFill: '#FFFFFF',
-    pointPeakStroke: '#0284C7',
-    peakHaloFill: 'rgba(8, 145, 178, 0.16)',
-    peakHaloStroke: 'rgba(2, 132, 199, 0.48)',
-    badgeBg: '#FFFFFF',
-    badgePeakStroke: '#0E7490',
-    badgePeakText: '#0E7490',
-    badgeSpikeStroke: 'rgba(22, 163, 74, 0.45)',
-    badgeSpikeText: '#15803D'
+    pointPeakStroke: '#1F7A91',
+    peakHaloFill: 'rgba(31, 122, 145, 0.12)',
+    peakHaloStroke: 'rgba(31, 122, 145, 0.28)',
+    badgeBg: '#F6F8FA',
+    badgePeakStroke: '#D0D7DE',
+    badgePeakText: '#1F7A91',
+    badgeSpikeStroke: '#D0D7DE',
+    badgeSpikeText: '#2A7E4C'
   }
 };
 
@@ -429,9 +431,10 @@ function buildSvg({ username, totalYear, last31 }, themeName = 'dark') {
     .map((pt) => {
       const isPeak = peakPoint && pt.idx === peakPoint.idx;
       const hasActivity = pt.count > 0;
-      const radius = isPeak ? 5.8 : hasActivity ? 3.8 : 2.3;
+      const radius = isPeak ? 4.6 : hasActivity ? 3.2 : 2.0;
       const fill = isPeak ? t.pointPeakFill : hasActivity ? t.pointActiveFill : t.pointInactiveFill;
       const stroke = isPeak ? t.pointPeakStroke : hasActivity ? t.pointActiveStroke : t.pointInactiveStroke;
+      const strokeWidth = isPeak ? '2.0' : themeName === 'light' ? '1.5' : '1.6';
 
       let badgeMarkup = '';
       if (labeledIndices.has(pt.idx) && pt.count > 0) {
@@ -463,14 +466,14 @@ function buildSvg({ username, totalYear, last31 }, themeName = 'dark') {
       return `
         <g>
           <title>${escapeXml(`${pt.date}: ${pt.count} contribuciones`)}</title>
-          ${isPeak ? `<circle cx="${pt.x.toFixed(2)}" cy="${pt.y.toFixed(2)}" r="10.5" fill="${t.peakHaloFill}" stroke="${t.peakHaloStroke}" stroke-width="1" />` : ''}
+          ${isPeak ? `<circle cx="${pt.x.toFixed(2)}" cy="${pt.y.toFixed(2)}" r="9" fill="${t.peakHaloFill}" stroke="${t.peakHaloStroke}" stroke-width="1" />` : ''}
           <circle
             cx="${pt.x.toFixed(2)}"
             cy="${pt.y.toFixed(2)}"
             r="${radius}"
             fill="${fill}"
             stroke="${stroke}"
-            stroke-width="${isPeak ? '2.4' : '1.7'}"
+            stroke-width="${strokeWidth}"
           />
           ${badgeMarkup}
         </g>
@@ -510,8 +513,8 @@ function buildSvg({ username, totalYear, last31 }, themeName = 'dark') {
     </clipPath>
   </defs>
 
-  <rect x="0.75" y="0.75" width="${width - 1.5}" height="${height - 1.5}" rx="14" fill="url(#bg-${themeName})" stroke="${t.cardBorder}" stroke-width="1.5" />
-  <line x1="22" y1="2" x2="${width - 22}" y2="2" stroke="url(#hairline-${themeName})" stroke-opacity="0.78" stroke-width="2" />
+  <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="12" fill="url(#bg-${themeName})" stroke="${t.cardBorder}" stroke-width="1" />
+  <line x1="22" y1="1.5" x2="${width - 22}" y2="1.5" stroke="url(#hairline-${themeName})" stroke-opacity="${t.hairlineOpacity}" stroke-width="1" />
 
   <!-- Header -->
   <text x="28" y="34" fill="${t.titleFill}" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="18.5" font-weight="700">
@@ -544,8 +547,8 @@ function buildSvg({ username, totalYear, last31 }, themeName = 'dark') {
   <!-- Area & Monotone Cubic Curve -->
   <g clip-path="url(#plot-clip-${themeName})">
     <path d="${areaPath}" fill="url(#area-${themeName})" />
-    <path d="${linePath}" fill="none" stroke="${t.lineGlow}" stroke-opacity="${t.lineGlowOpacity}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="${linePath}" fill="none" stroke="url(#line-${themeName})" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="${linePath}" fill="none" stroke="${t.lineGlow}" stroke-opacity="${t.lineGlowOpacity}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="${linePath}" fill="none" stroke="url(#line-${themeName})" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
   </g>
 
   <!-- Data Points & Peak Labels -->

@@ -191,9 +191,9 @@
 
   ### Racha de Contribuciones
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=0F172A&ring=22C55E&fire=0891B2&currStreakNum=F8FAFC&sideNums=F8FAFC&currStreakLabel=22C55E&sideLabels=38BDF8&dates=94A3B8&stroke=1E293B" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=FFFFFF&ring=16A34A&fire=0891B2&currStreakNum=0F172A&sideNums=0F172A&currStreakLabel=16A34A&sideLabels=0E7490&dates=475569&stroke=E2E8F0" />
-    <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=0F172A&ring=22C55E&fire=0891B2&currStreakNum=F8FAFC&sideNums=F8FAFC&currStreakLabel=22C55E&sideLabels=38BDF8&dates=94A3B8&stroke=1E293B" alt="GitHub streak" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=0D1117&ring=34A867&fire=2A8FA8&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=56D364&sideLabels=79C0FF&dates=8B949E&stroke=30363D" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=FFFFFF&ring=2A9255&fire=1F7A91&currStreakNum=24292F&sideNums=24292F&currStreakLabel=2A7E4C&sideLabels=1F7A91&dates=57606A&stroke=D0D7DE" />
+    <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=0D1117&ring=34A867&fire=2A8FA8&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=56D364&sideLabels=79C0FF&dates=8B949E&stroke=30363D" alt="GitHub streak" />
   </picture>
 
   <br /><br />
