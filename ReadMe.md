@@ -190,13 +190,21 @@
 <div align="center">
 
   ### Racha de Contribuciones
-  <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub streak" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=0F172A&ring=22C55E&fire=0891B2&currStreakNum=F8FAFC&sideNums=F8FAFC&currStreakLabel=22C55E&sideLabels=38BDF8&dates=94A3B8&stroke=1E293B" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=FFFFFF&ring=16A34A&fire=0891B2&currStreakNum=0F172A&sideNums=0F172A&currStreakLabel=16A34A&sideLabels=0E7490&dates=475569&stroke=E2E8F0" />
+    <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=0F172A&ring=22C55E&fire=0891B2&currStreakNum=F8FAFC&sideNums=F8FAFC&currStreakLabel=22C55E&sideLabels=38BDF8&dates=94A3B8&stroke=1E293B" alt="GitHub streak" />
+  </picture>
 
   <br /><br />
 
   ### Gráfica de Contribuciones (Línea de Actividad)
   <a href="https://github.com/Anderson-Oloroso">
-    <img src="./assets/activity-graph.svg" alt="Gráfica de Contribuciones de GitHub - Anderson-Oloroso" width="100%" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-graph-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./assets/activity-graph-light.svg" />
+      <img src="./assets/activity-graph-dark.svg" alt="Gráfica de Contribuciones de GitHub - Anderson-Oloroso" width="100%" />
+    </picture>
   </a>
 
   <br /><br />

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Dynamic GitHub Contributions Line Graph Generator (Piecewise-Linear Adaptive Scale)
+ * Dynamic GitHub Contributions Line Graph Generator (Adaptive Scale · Dark & Light Option A)
  * Zero external dependencies — Node.js 20+ native fetch + fs/promises.
  */
 
@@ -9,10 +9,99 @@ import { dirname, resolve } from 'node:path';
 
 const USERNAME = process.env.GITHUB_USERNAME || 'Anderson-Oloroso';
 const TOKEN = process.env.GITHUB_TOKEN;
-const OUTPUT_PATH = resolve(process.cwd(), process.env.GRAPH_OUTPUT || 'assets/activity-graph.svg');
+const OUTPUT_DIR = resolve(process.cwd(), process.env.GRAPH_OUTPUT_DIR || 'assets');
 
 const BASE_TICKS = [0, 5, 10, 25, 50, 100, 150, 200, 400];
 const MONTHS_ES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+
+const THEMES = {
+  dark: {
+    bgStops: ['#0F172A', '#0D1526', '#0B1222'],
+    cardBorder: 'rgba(8, 145, 178, 0.38)',
+    hairlineStops: ['#0891B2', '#22C55E', '#38BDF8'],
+    titleFill: '#F8FAFC',
+    subtitleFill: '#94A3B8',
+    kpiBg: '#111C33',
+    kpiLabel: '#94A3B8',
+    kpi1Border: 'rgba(34, 197, 94, 0.34)',
+    kpi1Value: '#22C55E',
+    kpi2Border: 'rgba(8, 145, 178, 0.42)',
+    kpi2Value: '#38BDF8',
+    kpi3Border: 'rgba(148, 163, 184, 0.25)',
+    kpi3Value: '#F8FAFC',
+    gridBaseline: 'rgba(8, 145, 178, 0.42)',
+    gridLine: 'rgba(148, 163, 184, 0.14)',
+    yTickHighlight: '#38BDF8',
+    yTickNormal: '#94A3B8',
+    xTickLine: 'rgba(8, 145, 178, 0.36)',
+    xLabelLast: '#F8FAFC',
+    xLabelNormal: '#94A3B8',
+    lineStops: ['#0891B2', '#22C55E', '#38BDF8'],
+    lineGlow: '#0891B2',
+    lineGlowOpacity: '0.24',
+    areaStops: [
+      { color: '#22C55E', op: '0.26' },
+      { color: '#0891B2', op: '0.10' },
+      { color: '#0F172A', op: '0.01' }
+    ],
+    pointActiveFill: '#FFFFFF',
+    pointActiveStroke: '#22C55E',
+    pointInactiveFill: '#1E293B',
+    pointInactiveStroke: '#475569',
+    pointPeakFill: '#FFFFFF',
+    pointPeakStroke: '#38BDF8',
+    peakHaloFill: 'rgba(8, 145, 178, 0.20)',
+    peakHaloStroke: 'rgba(56, 189, 248, 0.48)',
+    badgeBg: '#0F172A',
+    badgePeakStroke: '#38BDF8',
+    badgePeakText: '#38BDF8',
+    badgeSpikeStroke: 'rgba(34, 197, 94, 0.48)',
+    badgeSpikeText: '#22C55E'
+  },
+  light: {
+    bgStops: ['#FFFFFF', '#F8FAFC', '#F1F5F9'],
+    cardBorder: '#CBD5E1',
+    hairlineStops: ['#0891B2', '#16A34A', '#0284C7'],
+    titleFill: '#0F172A',
+    subtitleFill: '#475569',
+    kpiBg: '#F1F5F9',
+    kpiLabel: '#475569',
+    kpi1Border: 'rgba(22, 163, 74, 0.35)',
+    kpi1Value: '#16A34A',
+    kpi2Border: 'rgba(8, 145, 178, 0.35)',
+    kpi2Value: '#0E7490',
+    kpi3Border: '#CBD5E1',
+    kpi3Value: '#0F172A',
+    gridBaseline: 'rgba(8, 145, 178, 0.45)',
+    gridLine: 'rgba(148, 163, 184, 0.25)',
+    yTickHighlight: '#0E7490',
+    yTickNormal: '#475569',
+    xTickLine: 'rgba(8, 145, 178, 0.40)',
+    xLabelLast: '#0F172A',
+    xLabelNormal: '#475569',
+    lineStops: ['#0E7490', '#16A34A', '#0284C7'],
+    lineGlow: '#0891B2',
+    lineGlowOpacity: '0.16',
+    areaStops: [
+      { color: '#22C55E', op: '0.20' },
+      { color: '#0891B2', op: '0.07' },
+      { color: '#FFFFFF', op: '0.01' }
+    ],
+    pointActiveFill: '#FFFFFF',
+    pointActiveStroke: '#16A34A',
+    pointInactiveFill: '#E2E8F0',
+    pointInactiveStroke: '#94A3B8',
+    pointPeakFill: '#FFFFFF',
+    pointPeakStroke: '#0284C7',
+    peakHaloFill: 'rgba(8, 145, 178, 0.16)',
+    peakHaloStroke: 'rgba(2, 132, 199, 0.48)',
+    badgeBg: '#FFFFFF',
+    badgePeakStroke: '#0E7490',
+    badgePeakText: '#0E7490',
+    badgeSpikeStroke: 'rgba(22, 163, 74, 0.45)',
+    badgeSpikeText: '#15803D'
+  }
+};
 
 const QUERY = `
   query($login: String!) {
@@ -89,9 +178,6 @@ function valueToY(value, ticks, topY, bottomY) {
   return bottomY;
 }
 
-/**
- * Monotone cubic interpolation (Fritsch-Carlson) so the curve never overshoots 0 or peak bounds.
- */
 function buildSmoothPaths(points, bottomY) {
   const n = points.length;
   if (n === 0) return { linePath: '', areaPath: '' };
@@ -210,7 +296,8 @@ async function fetchContributions(username, token) {
   };
 }
 
-function buildSvg({ username, totalYear, last31 }) {
+function buildSvg({ username, totalYear, last31 }, themeName = 'dark') {
+  const t = THEMES[themeName] || THEMES.dark;
   const width = 1100;
   const height = 400;
   const pad = { top: 112, right: 40, bottom: 52, left: 66 };
@@ -248,7 +335,6 @@ function buildSvg({ username, totalYear, last31 }) {
 
   const { linePath, areaPath } = buildSmoothPaths(points, plotBottom);
 
-  // Horizontal grid lines & adaptive scale Y-axis ticks
   const yGridMarkup = ticks
     .map((tick) => {
       const y = valueToY(tick, ticks, plotTop, plotBottom);
@@ -259,7 +345,7 @@ function buildSvg({ username, totalYear, last31 }) {
           y1="${y.toFixed(2)}"
           x2="${plotRight}"
           y2="${y.toFixed(2)}"
-          stroke="${isBaseline ? 'rgba(0, 240, 255, 0.34)' : 'rgba(148, 163, 184, 0.14)'}"
+          stroke="${isBaseline ? t.gridBaseline : t.gridLine}"
           stroke-width="${isBaseline ? '1.3' : '1'}"
           ${isBaseline ? '' : 'stroke-dasharray="4 5"'}
         />
@@ -267,7 +353,7 @@ function buildSvg({ username, totalYear, last31 }) {
           x="${plotLeft - 12}"
           y="${(y + 4).toFixed(2)}"
           text-anchor="end"
-          fill="${tick >= 100 ? '#00F0FF' : '#94A3B8'}"
+          fill="${tick >= 100 ? t.yTickHighlight : t.yTickNormal}"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11.5"
           font-weight="${tick === ticks[ticks.length - 1] ? '700' : '500'}"
@@ -276,7 +362,6 @@ function buildSvg({ username, totalYear, last31 }) {
     })
     .join('');
 
-  // X-axis date labels spaced cleanly every 3 days + last day guaranteed without crowding
   const xLabelIndices = [];
   for (let i = 0; i < points.length; i += 3) {
     xLabelIndices.push(i);
@@ -298,14 +383,14 @@ function buildSvg({ username, totalYear, last31 }) {
           y1="${plotBottom}"
           x2="${pt.x.toFixed(2)}"
           y2="${plotBottom + 5}"
-          stroke="rgba(0, 240, 255, 0.36)"
+          stroke="${t.xTickLine}"
           stroke-width="1"
         />
         <text
           x="${pt.x.toFixed(2)}"
           y="${plotBottom + 21}"
           text-anchor="middle"
-          fill="${idx === lastIdx ? '#E2E8F0' : '#94A3B8'}"
+          fill="${idx === lastIdx ? t.xLabelLast : t.xLabelNormal}"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11"
         >${escapeXml(pt.shortDate)}</text>
@@ -313,7 +398,6 @@ function buildSvg({ username, totalYear, last31 }) {
     })
     .join('');
 
-  // Select clean non-overlapping value badges for peak day, last day, and notable spikes
   const labeledIndices = new Set();
   const placedXs = [];
   const peakPoint = points.find((pt) => pt.date === maxDay.date && pt.count === maxDay.contributionCount) || points[0];
@@ -346,8 +430,8 @@ function buildSvg({ username, totalYear, last31 }) {
       const isPeak = peakPoint && pt.idx === peakPoint.idx;
       const hasActivity = pt.count > 0;
       const radius = isPeak ? 5.8 : hasActivity ? 3.8 : 2.3;
-      const fill = isPeak ? '#FFFFFF' : hasActivity ? '#FFFFFF' : '#1E293B';
-      const stroke = isPeak ? '#00F0FF' : hasActivity ? '#00FF88' : '#475569';
+      const fill = isPeak ? t.pointPeakFill : hasActivity ? t.pointActiveFill : t.pointInactiveFill;
+      const stroke = isPeak ? t.pointPeakStroke : hasActivity ? t.pointActiveStroke : t.pointInactiveStroke;
 
       let badgeMarkup = '';
       if (labeledIndices.has(pt.idx) && pt.count > 0) {
@@ -359,16 +443,16 @@ function buildSvg({ username, totalYear, last31 }) {
             width="34"
             height="15"
             rx="4"
-            fill="#06080F"
-            fill-opacity="0.88"
-            stroke="${isPeak ? '#00F0FF' : 'rgba(0, 255, 136, 0.45)'}"
-            stroke-width="0.9"
+            fill="${t.badgeBg}"
+            fill-opacity="0.92"
+            stroke="${isPeak ? t.badgePeakStroke : t.badgeSpikeStroke}"
+            stroke-width="1"
           />
           <text
             x="${pt.x.toFixed(2)}"
             y="${labelY.toFixed(2)}"
             text-anchor="middle"
-            fill="${isPeak ? '#00F0FF' : '#00FF88'}"
+            fill="${isPeak ? t.badgePeakText : t.badgeSpikeText}"
             font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
             font-size="10.5"
             font-weight="700"
@@ -379,7 +463,7 @@ function buildSvg({ username, totalYear, last31 }) {
       return `
         <g>
           <title>${escapeXml(`${pt.date}: ${pt.count} contribuciones`)}</title>
-          ${isPeak ? `<circle cx="${pt.x.toFixed(2)}" cy="${pt.y.toFixed(2)}" r="10.5" fill="rgba(0, 240, 255, 0.16)" stroke="rgba(0, 240, 255, 0.45)" stroke-width="1" />` : ''}
+          ${isPeak ? `<circle cx="${pt.x.toFixed(2)}" cy="${pt.y.toFixed(2)}" r="10.5" fill="${t.peakHaloFill}" stroke="${t.peakHaloStroke}" stroke-width="1" />` : ''}
           <circle
             cx="${pt.x.toFixed(2)}"
             cy="${pt.y.toFixed(2)}"
@@ -401,50 +485,55 @@ function buildSvg({ username, totalYear, last31 }) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="100%" role="img" aria-label="Actividad de Contribuciones de ${escapeXml(username)}">
   <defs>
-    <linearGradient id="bg-obsidian" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05070E" />
-      <stop offset="55%" stop-color="#070B16" />
-      <stop offset="100%" stop-color="#04060D" />
+    <linearGradient id="bg-${themeName}" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="${t.bgStops[0]}" />
+      <stop offset="55%" stop-color="${t.bgStops[1]}" />
+      <stop offset="100%" stop-color="${t.bgStops[2]}" />
     </linearGradient>
-    <linearGradient id="line-cyber" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00FF88" />
-      <stop offset="55%" stop-color="#00F0FF" />
-      <stop offset="100%" stop-color="#00FF88" />
+    <linearGradient id="hairline-${themeName}" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="${t.hairlineStops[0]}" />
+      <stop offset="50%" stop-color="${t.hairlineStops[1]}" />
+      <stop offset="100%" stop-color="${t.hairlineStops[2]}" />
     </linearGradient>
-    <linearGradient id="area-cyber" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00FF88" stop-opacity="0.32" />
-      <stop offset="52%" stop-color="#00F0FF" stop-opacity="0.14" />
-      <stop offset="100%" stop-color="#06080F" stop-opacity="0.01" />
+    <linearGradient id="line-${themeName}" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="${t.lineStops[0]}" />
+      <stop offset="52%" stop-color="${t.lineStops[1]}" />
+      <stop offset="100%" stop-color="${t.lineStops[2]}" />
     </linearGradient>
-    <clipPath id="plot-clip">
-      <rect x="${plotLeft - 4}" y="${plotTop - 16}" width="${plotWidth + 8}" height="${plotBottom - plotTop + 22}" />
+    <linearGradient id="area-${themeName}" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="${t.areaStops[0].color}" stop-opacity="${t.areaStops[0].op}" />
+      <stop offset="52%" stop-color="${t.areaStops[1].color}" stop-opacity="${t.areaStops[1].op}" />
+      <stop offset="100%" stop-color="${t.areaStops[2].color}" stop-opacity="${t.areaStops[2].op}" />
+    </linearGradient>
+    <clipPath id="plot-clip-${themeName}">
+      <rect x="${plotLeft - 4}" y="${plotTop - 20}" width="${plotWidth + 8}" height="${plotBottom - plotTop + 26}" />
     </clipPath>
   </defs>
 
-  <rect x="0.75" y="0.75" width="${width - 1.5}" height="${height - 1.5}" rx="14" fill="url(#bg-obsidian)" stroke="rgba(0, 240, 255, 0.24)" stroke-width="1.5" />
-  <line x1="26" y1="1.5" x2="${width - 26}" y2="1.5" stroke="#00F0FF" stroke-opacity="0.45" stroke-width="1" />
+  <rect x="0.75" y="0.75" width="${width - 1.5}" height="${height - 1.5}" rx="14" fill="url(#bg-${themeName})" stroke="${t.cardBorder}" stroke-width="1.5" />
+  <line x1="22" y1="2" x2="${width - 22}" y2="2" stroke="url(#hairline-${themeName})" stroke-opacity="0.78" stroke-width="2" />
 
   <!-- Header -->
-  <text x="28" y="34" fill="#F8FAFC" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="18.5" font-weight="700">
+  <text x="28" y="34" fill="${t.titleFill}" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="18.5" font-weight="700">
     Actividad de Contribuciones · Últimos ${last31.length} días
   </text>
-  <text x="28" y="55" fill="#94A3B8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11.5">
+  <text x="28" y="55" fill="${t.subtitleFill}" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11.5">
     ${escapeXml(periodRange)}  |  Escala adaptativa: ${escapeXml(scaleLabel)}
   </text>
 
   <!-- Summary KPI Pills -->
   <g transform="translate(658, 17)">
-    <rect x="0" y="0" width="130" height="44" rx="8" fill="#0B1120" stroke="rgba(0, 255, 136, 0.34)" stroke-width="1" />
-    <text x="12" y="17" fill="#94A3B8" font-family="'JetBrains Mono', ui-monospace, Consolas, monospace" font-size="9.5">ÚLTIMOS 31 DÍAS</text>
-    <text x="12" y="35" fill="#00FF88" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="700">${escapeXml(total31.toLocaleString('en-US'))} (${activeDays}d)</text>
+    <rect x="0" y="0" width="130" height="44" rx="8" fill="${t.kpiBg}" stroke="${t.kpi1Border}" stroke-width="1" />
+    <text x="12" y="17" fill="${t.kpiLabel}" font-family="'JetBrains Mono', ui-monospace, Consolas, monospace" font-size="9.5">ÚLTIMOS 31 DÍAS</text>
+    <text x="12" y="35" fill="${t.kpi1Value}" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="700">${escapeXml(total31.toLocaleString('en-US'))} (${activeDays}d)</text>
 
-    <rect x="142" y="0" width="130" height="44" rx="8" fill="#0B1120" stroke="rgba(0, 240, 255, 0.38)" stroke-width="1" />
-    <text x="154" y="17" fill="#94A3B8" font-family="'JetBrains Mono', ui-monospace, Consolas, monospace" font-size="9.5">PICO DIARIO</text>
-    <text x="154" y="35" fill="#00F0FF" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="700">${maxDay.contributionCount} (${escapeXml(formatDateShortEs(maxDay.date))})</text>
+    <rect x="142" y="0" width="130" height="44" rx="8" fill="${t.kpiBg}" stroke="${t.kpi2Border}" stroke-width="1" />
+    <text x="154" y="17" fill="${t.kpiLabel}" font-family="'JetBrains Mono', ui-monospace, Consolas, monospace" font-size="9.5">PICO DIARIO</text>
+    <text x="154" y="35" fill="${t.kpi2Value}" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="700">${maxDay.contributionCount} (${escapeXml(formatDateShortEs(maxDay.date))})</text>
 
-    <rect x="284" y="0" width="126" height="44" rx="8" fill="#0B1120" stroke="rgba(148, 163, 184, 0.25)" stroke-width="1" />
-    <text x="296" y="17" fill="#94A3B8" font-family="'JetBrains Mono', ui-monospace, Consolas, monospace" font-size="9.5">TOTAL ANUAL</text>
-    <text x="296" y="35" fill="#F8FAFC" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="700">${escapeXml(totalYear.toLocaleString('en-US'))}</text>
+    <rect x="284" y="0" width="126" height="44" rx="8" fill="${t.kpiBg}" stroke="${t.kpi3Border}" stroke-width="1" />
+    <text x="296" y="17" fill="${t.kpiLabel}" font-family="'JetBrains Mono', ui-monospace, Consolas, monospace" font-size="9.5">TOTAL ANUAL</text>
+    <text x="296" y="35" fill="${t.kpi3Value}" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="700">${escapeXml(totalYear.toLocaleString('en-US'))}</text>
   </g>
 
   <!-- Horizontal Grid & Adaptive Y Axis -->
@@ -453,10 +542,10 @@ function buildSvg({ username, totalYear, last31 }) {
   </g>
 
   <!-- Area & Monotone Cubic Curve -->
-  <g clip-path="url(#plot-clip)">
-    <path d="${areaPath}" fill="url(#area-cyber)" />
-    <path d="${linePath}" fill="none" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="${linePath}" fill="none" stroke="url(#line-cyber)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+  <g clip-path="url(#plot-clip-${themeName})">
+    <path d="${areaPath}" fill="url(#area-${themeName})" />
+    <path d="${linePath}" fill="none" stroke="${t.lineGlow}" stroke-opacity="${t.lineGlowOpacity}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="${linePath}" fill="none" stroke="url(#line-${themeName})" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
   </g>
 
   <!-- Data Points & Peak Labels -->
@@ -478,11 +567,23 @@ async function main() {
   }
 
   const data = await fetchContributions(USERNAME, TOKEN);
-  const svg = buildSvg({ username: USERNAME, ...data });
-  await mkdir(dirname(OUTPUT_PATH), { recursive: true });
-  await writeFile(OUTPUT_PATH, svg, 'utf8');
+  await mkdir(OUTPUT_DIR, { recursive: true });
+
+  const darkSvg = buildSvg({ username: USERNAME, ...data }, 'dark');
+  const lightSvg = buildSvg({ username: USERNAME, ...data }, 'light');
+
+  const darkPath = resolve(OUTPUT_DIR, 'activity-graph-dark.svg');
+  const lightPath = resolve(OUTPUT_DIR, 'activity-graph-light.svg');
+  const compatPath = resolve(OUTPUT_DIR, 'activity-graph.svg');
+
+  await Promise.all([
+    writeFile(darkPath, darkSvg, 'utf8'),
+    writeFile(lightPath, lightSvg, 'utf8'),
+    writeFile(compatPath, darkSvg, 'utf8')
+  ]);
+
   console.log(
-    `Generated ${OUTPUT_PATH} for ${USERNAME}: totalYear=${data.totalYear}, last31=${data.last31.length} days, maxDay=${Math.max(...data.last31.map((d) => d.contributionCount))}`
+    `Generated dark/light SVGs for ${USERNAME}: totalYear=${data.totalYear}, last31=${data.last31.length} days, maxDay=${Math.max(...data.last31.map((d) => d.contributionCount))}`
   );
 }
 

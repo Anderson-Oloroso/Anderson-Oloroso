@@ -1,47 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" width="100%" role="img" aria-label="Actividad de Contribuciones de Anderson-Oloroso">
   <defs>
-    <linearGradient id="bg-obsidian" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05070E" />
-      <stop offset="55%" stop-color="#070B16" />
-      <stop offset="100%" stop-color="#04060D" />
+    <linearGradient id="bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="55%" stop-color="#0D1526" />
+      <stop offset="100%" stop-color="#0B1222" />
     </linearGradient>
-    <linearGradient id="line-cyber" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00FF88" />
-      <stop offset="55%" stop-color="#00F0FF" />
-      <stop offset="100%" stop-color="#00FF88" />
+    <linearGradient id="hairline-dark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0891B2" />
+      <stop offset="50%" stop-color="#22C55E" />
+      <stop offset="100%" stop-color="#38BDF8" />
     </linearGradient>
-    <linearGradient id="area-cyber" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00FF88" stop-opacity="0.32" />
-      <stop offset="52%" stop-color="#00F0FF" stop-opacity="0.14" />
-      <stop offset="100%" stop-color="#06080F" stop-opacity="0.01" />
+    <linearGradient id="line-dark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0891B2" />
+      <stop offset="52%" stop-color="#22C55E" />
+      <stop offset="100%" stop-color="#38BDF8" />
     </linearGradient>
-    <clipPath id="plot-clip">
-      <rect x="62" y="96" width="1002" height="258" />
+    <linearGradient id="area-dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.26" />
+      <stop offset="52%" stop-color="#0891B2" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.01" />
+    </linearGradient>
+    <clipPath id="plot-clip-dark">
+      <rect x="62" y="92" width="1002" height="262" />
     </clipPath>
   </defs>
 
-  <rect x="0.75" y="0.75" width="1098.5" height="398.5" rx="14" fill="url(#bg-obsidian)" stroke="rgba(0, 240, 255, 0.24)" stroke-width="1.5" />
-  <line x1="26" y1="1.5" x2="1074" y2="1.5" stroke="#00F0FF" stroke-opacity="0.45" stroke-width="1" />
+  <rect x="0.75" y="0.75" width="1098.5" height="398.5" rx="14" fill="url(#bg-dark)" stroke="rgba(8, 145, 178, 0.38)" stroke-width="1.5" />
+  <line x1="22" y1="2" x2="1078" y2="2" stroke="url(#hairline-dark)" stroke-opacity="0.78" stroke-width="2" />
 
   <!-- Header -->
   <text x="28" y="34" fill="#F8FAFC" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="18.5" font-weight="700">
     Actividad de Contribuciones · Últimos 31 días
   </text>
   <text x="28" y="55" fill="#94A3B8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11.5">
-    29 oct — 28 nov  |  Escala adaptativa: 5 · 10 · 25 · 50 · 100 · 150 · 200 · 400
+    28 oct — 27 nov  |  Escala adaptativa: 5 · 10 · 25 · 50 · 100 · 150 · 200 · 400
   </text>
 
   <!-- Summary KPI Pills -->
   <g transform="translate(658, 17)">
-    <rect x="0" y="0" width="130" height="44" rx="8" fill="#0B1120" stroke="rgba(0, 255, 136, 0.34)" stroke-width="1" />
+    <rect x="0" y="0" width="130" height="44" rx="8" fill="#111C33" stroke="rgba(34, 197, 94, 0.34)" stroke-width="1" />
     <text x="12" y="17" fill="#94A3B8" font-family="'JetBrains Mono', ui-monospace, Consolas, monospace" font-size="9.5">ÚLTIMOS 31 DÍAS</text>
-    <text x="12" y="35" fill="#00FF88" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="700">989 (22d)</text>
+    <text x="12" y="35" fill="#22C55E" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="700">1,087 (23d)</text>
 
-    <rect x="142" y="0" width="130" height="44" rx="8" fill="#0B1120" stroke="rgba(0, 240, 255, 0.38)" stroke-width="1" />
+    <rect x="142" y="0" width="130" height="44" rx="8" fill="#111C33" stroke="rgba(8, 145, 178, 0.42)" stroke-width="1" />
     <text x="154" y="17" fill="#94A3B8" font-family="'JetBrains Mono', ui-monospace, Consolas, monospace" font-size="9.5">PICO DIARIO</text>
-    <text x="154" y="35" fill="#00F0FF" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="700">387 (25 nov)</text>
+    <text x="154" y="35" fill="#38BDF8" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="700">387 (25 nov)</text>
 
-    <rect x="284" y="0" width="126" height="44" rx="8" fill="#0B1120" stroke="rgba(148, 163, 184, 0.25)" stroke-width="1" />
+    <rect x="284" y="0" width="126" height="44" rx="8" fill="#111C33" stroke="rgba(148, 163, 184, 0.25)" stroke-width="1" />
     <text x="296" y="17" fill="#94A3B8" font-family="'JetBrains Mono', ui-monospace, Consolas, monospace" font-size="9.5">TOTAL ANUAL</text>
     <text x="296" y="35" fill="#F8FAFC" font-family="'Segoe UI', sans-serif" font-size="15.5" font-weight="700">2,448</text>
   </g>
@@ -54,7 +59,7 @@
           y1="348.00"
           x2="1060"
           y2="348.00"
-          stroke="rgba(0, 240, 255, 0.34)"
+          stroke="rgba(8, 145, 178, 0.42)"
           stroke-width="1.3"
           
         />
@@ -157,7 +162,7 @@
           x="54"
           y="204.50"
           text-anchor="end"
-          fill="#00F0FF"
+          fill="#38BDF8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11.5"
           font-weight="500"
@@ -176,7 +181,7 @@
           x="54"
           y="175.00"
           text-anchor="end"
-          fill="#00F0FF"
+          fill="#38BDF8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11.5"
           font-weight="500"
@@ -195,7 +200,7 @@
           x="54"
           y="145.50"
           text-anchor="end"
-          fill="#00F0FF"
+          fill="#38BDF8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11.5"
           font-weight="500"
@@ -214,7 +219,7 @@
           x="54"
           y="116.00"
           text-anchor="end"
-          fill="#00F0FF"
+          fill="#38BDF8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11.5"
           font-weight="700"
@@ -223,59 +228,73 @@
   </g>
 
   <!-- Area & Monotone Cubic Curve -->
-  <g clip-path="url(#plot-clip)">
-    <path d="M 66.00 348.00 L 66.00 205.22 C 77.04 233.15, 88.09 289.00, 99.13 289.00 C 110.18 289.00, 121.22 283.10, 132.27 283.10 C 143.31 283.10, 154.36 283.10, 165.40 283.10 C 176.44 283.10, 187.49 348.00, 198.53 348.00 C 209.58 348.00, 220.62 294.98, 231.67 279.17 C 242.71 263.35, 253.76 251.74, 264.80 242.98 C 275.84 234.22, 286.89 222.33, 297.93 222.33 C 308.98 222.33, 320.02 338.35, 331.07 342.10 C 342.11 345.85, 353.16 348.00, 364.20 348.00 C 375.24 348.00, 386.29 348.00, 397.33 348.00 C 408.38 348.00, 419.42 330.30, 430.47 330.30 C 441.51 330.30, 452.56 348.00, 463.60 348.00 C 474.64 348.00, 485.69 306.70, 496.73 306.70 C 507.78 306.70, 518.82 348.00, 529.87 348.00 C 540.91 348.00, 551.96 342.10, 563.00 342.10 C 574.04 342.10, 585.09 348.00, 596.13 348.00 C 607.18 348.00, 618.22 348.00, 629.27 348.00 C 640.31 348.00, 651.36 339.31, 662.40 330.30 C 673.44 321.29, 684.49 279.78, 695.53 273.27 C 706.58 266.75, 717.62 261.47, 728.67 261.47 C 739.71 261.47, 750.76 279.17, 761.80 279.17 C 772.84 279.17, 783.89 216.43, 794.93 216.43 C 805.98 216.43, 817.02 254.86, 828.07 263.43 C 839.11 272.01, 850.16 281.13, 861.20 281.13 C 872.24 281.13, 883.29 228.23, 894.33 228.23 C 905.38 228.23, 916.42 348.00, 927.47 348.00 C 938.51 348.00, 949.56 113.92, 960.60 113.92 C 971.64 113.92, 982.69 214.27, 993.73 219.38 C 1004.78 224.49, 1015.82 222.49, 1026.87 227.64 C 1037.91 232.79, 1048.96 307.88, 1060.00 348.00 L 1060.00 348.00 Z" fill="url(#area-cyber)" />
-    <path d="M 66.00 205.22 C 77.04 233.15, 88.09 289.00, 99.13 289.00 C 110.18 289.00, 121.22 283.10, 132.27 283.10 C 143.31 283.10, 154.36 283.10, 165.40 283.10 C 176.44 283.10, 187.49 348.00, 198.53 348.00 C 209.58 348.00, 220.62 294.98, 231.67 279.17 C 242.71 263.35, 253.76 251.74, 264.80 242.98 C 275.84 234.22, 286.89 222.33, 297.93 222.33 C 308.98 222.33, 320.02 338.35, 331.07 342.10 C 342.11 345.85, 353.16 348.00, 364.20 348.00 C 375.24 348.00, 386.29 348.00, 397.33 348.00 C 408.38 348.00, 419.42 330.30, 430.47 330.30 C 441.51 330.30, 452.56 348.00, 463.60 348.00 C 474.64 348.00, 485.69 306.70, 496.73 306.70 C 507.78 306.70, 518.82 348.00, 529.87 348.00 C 540.91 348.00, 551.96 342.10, 563.00 342.10 C 574.04 342.10, 585.09 348.00, 596.13 348.00 C 607.18 348.00, 618.22 348.00, 629.27 348.00 C 640.31 348.00, 651.36 339.31, 662.40 330.30 C 673.44 321.29, 684.49 279.78, 695.53 273.27 C 706.58 266.75, 717.62 261.47, 728.67 261.47 C 739.71 261.47, 750.76 279.17, 761.80 279.17 C 772.84 279.17, 783.89 216.43, 794.93 216.43 C 805.98 216.43, 817.02 254.86, 828.07 263.43 C 839.11 272.01, 850.16 281.13, 861.20 281.13 C 872.24 281.13, 883.29 228.23, 894.33 228.23 C 905.38 228.23, 916.42 348.00, 927.47 348.00 C 938.51 348.00, 949.56 113.92, 960.60 113.92 C 971.64 113.92, 982.69 214.27, 993.73 219.38 C 1004.78 224.49, 1015.82 222.49, 1026.87 227.64 C 1037.91 232.79, 1048.96 307.88, 1060.00 348.00" fill="none" stroke="#00F0FF" stroke-opacity="0.22" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M 66.00 205.22 C 77.04 233.15, 88.09 289.00, 99.13 289.00 C 110.18 289.00, 121.22 283.10, 132.27 283.10 C 143.31 283.10, 154.36 283.10, 165.40 283.10 C 176.44 283.10, 187.49 348.00, 198.53 348.00 C 209.58 348.00, 220.62 294.98, 231.67 279.17 C 242.71 263.35, 253.76 251.74, 264.80 242.98 C 275.84 234.22, 286.89 222.33, 297.93 222.33 C 308.98 222.33, 320.02 338.35, 331.07 342.10 C 342.11 345.85, 353.16 348.00, 364.20 348.00 C 375.24 348.00, 386.29 348.00, 397.33 348.00 C 408.38 348.00, 419.42 330.30, 430.47 330.30 C 441.51 330.30, 452.56 348.00, 463.60 348.00 C 474.64 348.00, 485.69 306.70, 496.73 306.70 C 507.78 306.70, 518.82 348.00, 529.87 348.00 C 540.91 348.00, 551.96 342.10, 563.00 342.10 C 574.04 342.10, 585.09 348.00, 596.13 348.00 C 607.18 348.00, 618.22 348.00, 629.27 348.00 C 640.31 348.00, 651.36 339.31, 662.40 330.30 C 673.44 321.29, 684.49 279.78, 695.53 273.27 C 706.58 266.75, 717.62 261.47, 728.67 261.47 C 739.71 261.47, 750.76 279.17, 761.80 279.17 C 772.84 279.17, 783.89 216.43, 794.93 216.43 C 805.98 216.43, 817.02 254.86, 828.07 263.43 C 839.11 272.01, 850.16 281.13, 861.20 281.13 C 872.24 281.13, 883.29 228.23, 894.33 228.23 C 905.38 228.23, 916.42 348.00, 927.47 348.00 C 938.51 348.00, 949.56 113.92, 960.60 113.92 C 971.64 113.92, 982.69 214.27, 993.73 219.38 C 1004.78 224.49, 1015.82 222.49, 1026.87 227.64 C 1037.91 232.79, 1048.96 307.88, 1060.00 348.00" fill="none" stroke="url(#line-cyber)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+  <g clip-path="url(#plot-clip-dark)">
+    <path d="M 66.00 348.00 L 66.00 201.68 C 77.04 202.86, 88.09 202.96, 99.13 205.22 C 110.18 207.48, 121.22 289.00, 132.27 289.00 C 143.31 289.00, 154.36 283.10, 165.40 283.10 C 176.44 283.10, 187.49 283.10, 198.53 283.10 C 209.58 283.10, 220.62 348.00, 231.67 348.00 C 242.71 348.00, 253.76 294.98, 264.80 279.17 C 275.84 263.35, 286.89 251.74, 297.93 242.98 C 308.98 234.22, 320.02 222.33, 331.07 222.33 C 342.11 222.33, 353.16 338.35, 364.20 342.10 C 375.24 345.85, 386.29 348.00, 397.33 348.00 C 408.38 348.00, 419.42 348.00, 430.47 348.00 C 441.51 348.00, 452.56 330.30, 463.60 330.30 C 474.64 330.30, 485.69 348.00, 496.73 348.00 C 507.78 348.00, 518.82 306.70, 529.87 306.70 C 540.91 306.70, 551.96 348.00, 563.00 348.00 C 574.04 348.00, 585.09 342.10, 596.13 342.10 C 607.18 342.10, 618.22 348.00, 629.27 348.00 C 640.31 348.00, 651.36 348.00, 662.40 348.00 C 673.44 348.00, 684.49 339.31, 695.53 330.30 C 706.58 321.29, 717.62 280.66, 728.67 273.27 C 739.71 265.87, 750.76 259.50, 761.80 259.50 C 772.84 259.50, 783.89 281.13, 794.93 281.13 C 805.98 281.13, 817.02 216.43, 828.07 216.43 C 839.11 216.43, 850.16 246.96, 861.20 258.32 C 872.24 269.68, 883.29 287.03, 894.33 287.03 C 905.38 287.03, 916.42 228.23, 927.47 228.23 C 938.51 228.23, 949.56 348.00, 960.60 348.00 C 971.64 348.00, 982.69 113.92, 993.73 113.92 C 1004.78 113.92, 1015.82 214.27, 1026.87 219.38 C 1037.91 224.49, 1048.96 224.89, 1060.00 227.64 L 1060.00 348.00 Z" fill="url(#area-dark)" />
+    <path d="M 66.00 201.68 C 77.04 202.86, 88.09 202.96, 99.13 205.22 C 110.18 207.48, 121.22 289.00, 132.27 289.00 C 143.31 289.00, 154.36 283.10, 165.40 283.10 C 176.44 283.10, 187.49 283.10, 198.53 283.10 C 209.58 283.10, 220.62 348.00, 231.67 348.00 C 242.71 348.00, 253.76 294.98, 264.80 279.17 C 275.84 263.35, 286.89 251.74, 297.93 242.98 C 308.98 234.22, 320.02 222.33, 331.07 222.33 C 342.11 222.33, 353.16 338.35, 364.20 342.10 C 375.24 345.85, 386.29 348.00, 397.33 348.00 C 408.38 348.00, 419.42 348.00, 430.47 348.00 C 441.51 348.00, 452.56 330.30, 463.60 330.30 C 474.64 330.30, 485.69 348.00, 496.73 348.00 C 507.78 348.00, 518.82 306.70, 529.87 306.70 C 540.91 306.70, 551.96 348.00, 563.00 348.00 C 574.04 348.00, 585.09 342.10, 596.13 342.10 C 607.18 342.10, 618.22 348.00, 629.27 348.00 C 640.31 348.00, 651.36 348.00, 662.40 348.00 C 673.44 348.00, 684.49 339.31, 695.53 330.30 C 706.58 321.29, 717.62 280.66, 728.67 273.27 C 739.71 265.87, 750.76 259.50, 761.80 259.50 C 772.84 259.50, 783.89 281.13, 794.93 281.13 C 805.98 281.13, 817.02 216.43, 828.07 216.43 C 839.11 216.43, 850.16 246.96, 861.20 258.32 C 872.24 269.68, 883.29 287.03, 894.33 287.03 C 905.38 287.03, 916.42 228.23, 927.47 228.23 C 938.51 228.23, 949.56 348.00, 960.60 348.00 C 971.64 348.00, 982.69 113.92, 993.73 113.92 C 1004.78 113.92, 1015.82 214.27, 1026.87 219.38 C 1037.91 224.49, 1048.96 224.89, 1060.00 227.64" fill="none" stroke="#0891B2" stroke-opacity="0.24" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 66.00 201.68 C 77.04 202.86, 88.09 202.96, 99.13 205.22 C 110.18 207.48, 121.22 289.00, 132.27 289.00 C 143.31 289.00, 154.36 283.10, 165.40 283.10 C 176.44 283.10, 187.49 283.10, 198.53 283.10 C 209.58 283.10, 220.62 348.00, 231.67 348.00 C 242.71 348.00, 253.76 294.98, 264.80 279.17 C 275.84 263.35, 286.89 251.74, 297.93 242.98 C 308.98 234.22, 320.02 222.33, 331.07 222.33 C 342.11 222.33, 353.16 338.35, 364.20 342.10 C 375.24 345.85, 386.29 348.00, 397.33 348.00 C 408.38 348.00, 419.42 348.00, 430.47 348.00 C 441.51 348.00, 452.56 330.30, 463.60 330.30 C 474.64 330.30, 485.69 348.00, 496.73 348.00 C 507.78 348.00, 518.82 306.70, 529.87 306.70 C 540.91 306.70, 551.96 348.00, 563.00 348.00 C 574.04 348.00, 585.09 342.10, 596.13 342.10 C 607.18 342.10, 618.22 348.00, 629.27 348.00 C 640.31 348.00, 651.36 348.00, 662.40 348.00 C 673.44 348.00, 684.49 339.31, 695.53 330.30 C 706.58 321.29, 717.62 280.66, 728.67 273.27 C 739.71 265.87, 750.76 259.50, 761.80 259.50 C 772.84 259.50, 783.89 281.13, 794.93 281.13 C 805.98 281.13, 817.02 216.43, 828.07 216.43 C 839.11 216.43, 850.16 246.96, 861.20 258.32 C 872.24 269.68, 883.29 287.03, 894.33 287.03 C 905.38 287.03, 916.42 228.23, 927.47 228.23 C 938.51 228.23, 949.56 348.00, 960.60 348.00 C 971.64 348.00, 982.69 113.92, 993.73 113.92 C 1004.78 113.92, 1015.82 214.27, 1026.87 219.38 C 1037.91 224.49, 1048.96 224.89, 1060.00 227.64" fill="none" stroke="url(#line-dark)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
   </g>
 
   <!-- Data Points & Peak Labels -->
   <g>
     
         <g>
-          <title>2026-10-29: 92 contribuciones</title>
+          <title>2026-10-28: 98 contribuciones</title>
           
           <circle
             cx="66.00"
-            cy="205.22"
+            cy="201.68"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
           <rect
             x="49.00"
-            y="182.22"
+            y="178.68"
             width="34"
             height="15"
             rx="4"
-            fill="#06080F"
-            fill-opacity="0.88"
-            stroke="rgba(0, 255, 136, 0.45)"
-            stroke-width="0.9"
+            fill="#0F172A"
+            fill-opacity="0.92"
+            stroke="rgba(34, 197, 94, 0.48)"
+            stroke-width="1"
           />
           <text
             x="66.00"
-            y="193.22"
+            y="189.68"
             text-anchor="middle"
-            fill="#00FF88"
+            fill="#22C55E"
             font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
             font-size="10.5"
             font-weight="700"
-          >92</text>
+          >98</text>
         
+        </g>
+      
+        <g>
+          <title>2026-10-29: 92 contribuciones</title>
+          
+          <circle
+            cx="99.13"
+            cy="205.22"
+            r="3.8"
+            fill="#FFFFFF"
+            stroke="#22C55E"
+            stroke-width="1.7"
+          />
+          
         </g>
       
         <g>
           <title>2026-10-30: 10 contribuciones</title>
           
           <circle
-            cx="99.13"
+            cx="132.27"
             cy="289.00"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -285,11 +304,11 @@
           <title>2026-10-31: 13 contribuciones</title>
           
           <circle
-            cx="132.27"
+            cx="165.40"
             cy="283.10"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -299,11 +318,11 @@
           <title>2026-11-01: 13 contribuciones</title>
           
           <circle
-            cx="165.40"
+            cx="198.53"
             cy="283.10"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -313,7 +332,7 @@
           <title>2026-11-02: 0 contribuciones</title>
           
           <circle
-            cx="198.53"
+            cx="231.67"
             cy="348.00"
             r="2.3"
             fill="#1E293B"
@@ -327,11 +346,11 @@
           <title>2026-11-03: 15 contribuciones</title>
           
           <circle
-            cx="231.67"
+            cx="264.80"
             cy="279.17"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -341,11 +360,11 @@
           <title>2026-11-04: 39 contribuciones</title>
           
           <circle
-            cx="264.80"
+            cx="297.93"
             cy="242.98"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -355,30 +374,30 @@
           <title>2026-11-05: 63 contribuciones</title>
           
           <circle
-            cx="297.93"
+            cx="331.07"
             cy="222.33"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
           <rect
-            x="280.93"
+            x="314.07"
             y="199.33"
             width="34"
             height="15"
             rx="4"
-            fill="#06080F"
-            fill-opacity="0.88"
-            stroke="rgba(0, 255, 136, 0.45)"
-            stroke-width="0.9"
+            fill="#0F172A"
+            fill-opacity="0.92"
+            stroke="rgba(34, 197, 94, 0.48)"
+            stroke-width="1"
           />
           <text
-            x="297.93"
+            x="331.07"
             y="210.33"
             text-anchor="middle"
-            fill="#00FF88"
+            fill="#22C55E"
             font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
             font-size="10.5"
             font-weight="700"
@@ -390,11 +409,11 @@
           <title>2026-11-06: 1 contribuciones</title>
           
           <circle
-            cx="331.07"
+            cx="364.20"
             cy="342.10"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -402,20 +421,6 @@
       
         <g>
           <title>2026-11-07: 0 contribuciones</title>
-          
-          <circle
-            cx="364.20"
-            cy="348.00"
-            r="2.3"
-            fill="#1E293B"
-            stroke="#475569"
-            stroke-width="1.7"
-          />
-          
-        </g>
-      
-        <g>
-          <title>2026-11-08: 0 contribuciones</title>
           
           <circle
             cx="397.33"
@@ -429,14 +434,28 @@
         </g>
       
         <g>
-          <title>2026-11-09: 3 contribuciones</title>
+          <title>2026-11-08: 0 contribuciones</title>
           
           <circle
             cx="430.47"
+            cy="348.00"
+            r="2.3"
+            fill="#1E293B"
+            stroke="#475569"
+            stroke-width="1.7"
+          />
+          
+        </g>
+      
+        <g>
+          <title>2026-11-09: 3 contribuciones</title>
+          
+          <circle
+            cx="463.60"
             cy="330.30"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -446,7 +465,7 @@
           <title>2026-11-10: 0 contribuciones</title>
           
           <circle
-            cx="463.60"
+            cx="496.73"
             cy="348.00"
             r="2.3"
             fill="#1E293B"
@@ -460,11 +479,11 @@
           <title>2026-11-11: 7 contribuciones</title>
           
           <circle
-            cx="496.73"
+            cx="529.87"
             cy="306.70"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -474,7 +493,7 @@
           <title>2026-11-12: 0 contribuciones</title>
           
           <circle
-            cx="529.87"
+            cx="563.00"
             cy="348.00"
             r="2.3"
             fill="#1E293B"
@@ -488,11 +507,11 @@
           <title>2026-11-13: 1 contribuciones</title>
           
           <circle
-            cx="563.00"
+            cx="596.13"
             cy="342.10"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -500,20 +519,6 @@
       
         <g>
           <title>2026-11-14: 0 contribuciones</title>
-          
-          <circle
-            cx="596.13"
-            cy="348.00"
-            r="2.3"
-            fill="#1E293B"
-            stroke="#475569"
-            stroke-width="1.7"
-          />
-          
-        </g>
-      
-        <g>
-          <title>2026-11-15: 0 contribuciones</title>
           
           <circle
             cx="629.27"
@@ -527,14 +532,28 @@
         </g>
       
         <g>
-          <title>2026-11-16: 3 contribuciones</title>
+          <title>2026-11-15: 0 contribuciones</title>
           
           <circle
             cx="662.40"
+            cy="348.00"
+            r="2.3"
+            fill="#1E293B"
+            stroke="#475569"
+            stroke-width="1.7"
+          />
+          
+        </g>
+      
+        <g>
+          <title>2026-11-16: 3 contribuciones</title>
+          
+          <circle
+            cx="695.53"
             cy="330.30"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -544,39 +563,39 @@
           <title>2026-11-17: 18 contribuciones</title>
           
           <circle
-            cx="695.53"
+            cx="728.67"
             cy="273.27"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
         </g>
       
         <g>
-          <title>2026-11-18: 24 contribuciones</title>
-          
-          <circle
-            cx="728.67"
-            cy="261.47"
-            r="3.8"
-            fill="#FFFFFF"
-            stroke="#00FF88"
-            stroke-width="1.7"
-          />
-          
-        </g>
-      
-        <g>
-          <title>2026-11-19: 15 contribuciones</title>
+          <title>2026-11-18: 25 contribuciones</title>
           
           <circle
             cx="761.80"
-            cy="279.17"
+            cy="259.50"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
+            stroke-width="1.7"
+          />
+          
+        </g>
+      
+        <g>
+          <title>2026-11-19: 14 contribuciones</title>
+          
+          <circle
+            cx="794.93"
+            cy="281.13"
+            r="3.8"
+            fill="#FFFFFF"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -586,30 +605,30 @@
           <title>2026-11-20: 73 contribuciones</title>
           
           <circle
-            cx="794.93"
+            cx="828.07"
             cy="216.43"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
           <rect
-            x="777.93"
+            x="811.07"
             y="193.43"
             width="34"
             height="15"
             rx="4"
-            fill="#06080F"
-            fill-opacity="0.88"
-            stroke="rgba(0, 255, 136, 0.45)"
-            stroke-width="0.9"
+            fill="#0F172A"
+            fill-opacity="0.92"
+            stroke="rgba(34, 197, 94, 0.48)"
+            stroke-width="1"
           />
           <text
-            x="794.93"
+            x="828.07"
             y="204.43"
             text-anchor="middle"
-            fill="#00FF88"
+            fill="#22C55E"
             font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
             font-size="10.5"
             font-weight="700"
@@ -618,28 +637,28 @@
         </g>
       
         <g>
-          <title>2026-11-21: 23 contribuciones</title>
+          <title>2026-11-21: 26 contribuciones</title>
           
           <circle
-            cx="828.07"
-            cy="263.43"
+            cx="861.20"
+            cy="258.32"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
         </g>
       
         <g>
-          <title>2026-11-22: 14 contribuciones</title>
+          <title>2026-11-22: 11 contribuciones</title>
           
           <circle
-            cx="861.20"
-            cy="281.13"
+            cx="894.33"
+            cy="287.03"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -649,11 +668,11 @@
           <title>2026-11-23: 53 contribuciones</title>
           
           <circle
-            cx="894.33"
+            cx="927.47"
             cy="228.23"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -663,7 +682,7 @@
           <title>2026-11-24: 0 contribuciones</title>
           
           <circle
-            cx="927.47"
+            cx="960.60"
             cy="348.00"
             r="2.3"
             fill="#1E293B"
@@ -675,32 +694,32 @@
       
         <g>
           <title>2026-11-25: 387 contribuciones</title>
-          <circle cx="960.60" cy="113.92" r="10.5" fill="rgba(0, 240, 255, 0.16)" stroke="rgba(0, 240, 255, 0.45)" stroke-width="1" />
+          <circle cx="993.73" cy="113.92" r="10.5" fill="rgba(8, 145, 178, 0.20)" stroke="rgba(56, 189, 248, 0.48)" stroke-width="1" />
           <circle
-            cx="960.60"
+            cx="993.73"
             cy="113.92"
             r="5.8"
             fill="#FFFFFF"
-            stroke="#00F0FF"
+            stroke="#38BDF8"
             stroke-width="2.4"
           />
           
           <rect
-            x="943.60"
+            x="976.73"
             y="91.00"
             width="34"
             height="15"
             rx="4"
-            fill="#06080F"
-            fill-opacity="0.88"
-            stroke="#00F0FF"
-            stroke-width="0.9"
+            fill="#0F172A"
+            fill-opacity="0.92"
+            stroke="#38BDF8"
+            stroke-width="1"
           />
           <text
-            x="960.60"
+            x="993.73"
             y="102.00"
             text-anchor="middle"
-            fill="#00F0FF"
+            fill="#38BDF8"
             font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
             font-size="10.5"
             font-weight="700"
@@ -712,11 +731,11 @@
           <title>2026-11-26: 68 contribuciones</title>
           
           <circle
-            cx="993.73"
+            cx="1026.87"
             cy="219.38"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -726,25 +745,11 @@
           <title>2026-11-27: 54 contribuciones</title>
           
           <circle
-            cx="1026.87"
+            cx="1060.00"
             cy="227.64"
             r="3.8"
             fill="#FFFFFF"
-            stroke="#00FF88"
-            stroke-width="1.7"
-          />
-          
-        </g>
-      
-        <g>
-          <title>2026-11-28: 0 contribuciones</title>
-          
-          <circle
-            cx="1060.00"
-            cy="348.00"
-            r="2.3"
-            fill="#1E293B"
-            stroke="#475569"
+            stroke="#22C55E"
             stroke-width="1.7"
           />
           
@@ -760,7 +765,7 @@
           y1="348"
           x2="66.00"
           y2="353"
-          stroke="rgba(0, 240, 255, 0.36)"
+          stroke="rgba(8, 145, 178, 0.36)"
           stroke-width="1"
         />
         <text
@@ -770,14 +775,14 @@
           fill="#94A3B8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11"
-        >29 oct</text>
+        >28 oct</text>
       
         <line
           x1="165.40"
           y1="348"
           x2="165.40"
           y2="353"
-          stroke="rgba(0, 240, 255, 0.36)"
+          stroke="rgba(8, 145, 178, 0.36)"
           stroke-width="1"
         />
         <text
@@ -787,14 +792,14 @@
           fill="#94A3B8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11"
-        >1 nov</text>
+        >31 oct</text>
       
         <line
           x1="264.80"
           y1="348"
           x2="264.80"
           y2="353"
-          stroke="rgba(0, 240, 255, 0.36)"
+          stroke="rgba(8, 145, 178, 0.36)"
           stroke-width="1"
         />
         <text
@@ -804,14 +809,14 @@
           fill="#94A3B8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11"
-        >4 nov</text>
+        >3 nov</text>
       
         <line
           x1="364.20"
           y1="348"
           x2="364.20"
           y2="353"
-          stroke="rgba(0, 240, 255, 0.36)"
+          stroke="rgba(8, 145, 178, 0.36)"
           stroke-width="1"
         />
         <text
@@ -821,14 +826,14 @@
           fill="#94A3B8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11"
-        >7 nov</text>
+        >6 nov</text>
       
         <line
           x1="463.60"
           y1="348"
           x2="463.60"
           y2="353"
-          stroke="rgba(0, 240, 255, 0.36)"
+          stroke="rgba(8, 145, 178, 0.36)"
           stroke-width="1"
         />
         <text
@@ -838,14 +843,14 @@
           fill="#94A3B8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11"
-        >10 nov</text>
+        >9 nov</text>
       
         <line
           x1="563.00"
           y1="348"
           x2="563.00"
           y2="353"
-          stroke="rgba(0, 240, 255, 0.36)"
+          stroke="rgba(8, 145, 178, 0.36)"
           stroke-width="1"
         />
         <text
@@ -855,14 +860,14 @@
           fill="#94A3B8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11"
-        >13 nov</text>
+        >12 nov</text>
       
         <line
           x1="662.40"
           y1="348"
           x2="662.40"
           y2="353"
-          stroke="rgba(0, 240, 255, 0.36)"
+          stroke="rgba(8, 145, 178, 0.36)"
           stroke-width="1"
         />
         <text
@@ -872,14 +877,14 @@
           fill="#94A3B8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11"
-        >16 nov</text>
+        >15 nov</text>
       
         <line
           x1="761.80"
           y1="348"
           x2="761.80"
           y2="353"
-          stroke="rgba(0, 240, 255, 0.36)"
+          stroke="rgba(8, 145, 178, 0.36)"
           stroke-width="1"
         />
         <text
@@ -889,14 +894,14 @@
           fill="#94A3B8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11"
-        >19 nov</text>
+        >18 nov</text>
       
         <line
           x1="861.20"
           y1="348"
           x2="861.20"
           y2="353"
-          stroke="rgba(0, 240, 255, 0.36)"
+          stroke="rgba(8, 145, 178, 0.36)"
           stroke-width="1"
         />
         <text
@@ -906,14 +911,14 @@
           fill="#94A3B8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11"
-        >22 nov</text>
+        >21 nov</text>
       
         <line
           x1="960.60"
           y1="348"
           x2="960.60"
           y2="353"
-          stroke="rgba(0, 240, 255, 0.36)"
+          stroke="rgba(8, 145, 178, 0.36)"
           stroke-width="1"
         />
         <text
@@ -923,24 +928,24 @@
           fill="#94A3B8"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11"
-        >25 nov</text>
+        >24 nov</text>
       
         <line
           x1="1060.00"
           y1="348"
           x2="1060.00"
           y2="353"
-          stroke="rgba(0, 240, 255, 0.36)"
+          stroke="rgba(8, 145, 178, 0.36)"
           stroke-width="1"
         />
         <text
           x="1060.00"
           y="369"
           text-anchor="middle"
-          fill="#E2E8F0"
+          fill="#F8FAFC"
           font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace"
           font-size="11"
-        >28 nov</text>
+        >27 nov</text>
       
   </g>
 </svg>

@@ -32,11 +32,11 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          if git diff --quiet assets/activity-graph.svg && [ -z "$(git status --porcelain assets/activity-graph.svg)" ]; then
-            echo "No changes to activity-graph.svg"
+          if git diff --quiet assets/activity-graph.svg assets/activity-graph-dark.svg assets/activity-graph-light.svg && [ -z "$(git status --porcelain assets/)" ]; then
+            echo "No changes to activity-graph SVGs"
             exit 0
           fi
-          git add assets/activity-graph.svg
-          git commit -m "chore(graph): update adaptive activity graph"
+          git add assets/activity-graph.svg assets/activity-graph-dark.svg assets/activity-graph-light.svg
+          git commit -m "chore(graph): update adaptive activity graphs (dark & light)"
           git pull --rebase origin main
           git push
