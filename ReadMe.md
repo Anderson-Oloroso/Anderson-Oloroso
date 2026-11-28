@@ -196,7 +196,7 @@
 
   ### Gráfica de Contribuciones (Línea de Actividad)
   <a href="https://github.com/Anderson-Oloroso">
-    <img src="https://github-readme-activity-graph.ashutosh-dwivedi0710.workers.dev/graph?username=Anderson-Oloroso&bg_color=06080f&color=00f0ff&line=00ff88&point=ffffff&area=true&hide_border=true&custom_title=Actividad%20de%20Contribuciones" alt="Gráfica de Contribuciones de GitHub - Anderson-Oloroso" width="100%" />
+    <img src="./assets/activity-graph.svg" alt="Gráfica de Contribuciones de GitHub - Anderson-Oloroso" width="100%" />
   </a>
 
   <br /><br />

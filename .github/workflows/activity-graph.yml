@@ -1,0 +1,42 @@
+name: GitHub-Activity-Graph
+
+on:
+  schedule:
+    - cron: "15 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/generate-activity-graph.mjs"
+      - ".github/workflows/activity-graph.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-adaptive-activity-graph
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Generate adaptive activity graph SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: node scripts/generate-activity-graph.mjs
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          if git diff --quiet assets/activity-graph.svg && [ -z "$(git status --porcelain assets/activity-graph.svg)" ]; then
+            echo "No changes to activity-graph.svg"
+            exit 0
+          fi
+          git add assets/activity-graph.svg
+          git commit -m "chore(graph): update adaptive activity graph"
+          git pull --rebase origin main
+          git push
