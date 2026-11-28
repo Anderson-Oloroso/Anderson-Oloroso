@@ -190,21 +190,13 @@
 <div align="center">
 
   ### Racha de Contribuciones
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=0D1117&ring=34A867&fire=2A8FA8&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=56D364&sideLabels=79C0FF&dates=8B949E&stroke=30363D" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=FFFFFF&ring=2A9255&fire=1F7A91&currStreakNum=24292F&sideNums=24292F&currStreakLabel=2A7E4C&sideLabels=1F7A91&dates=57606A&stroke=D0D7DE" />
-    <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=0D1117&ring=34A867&fire=2A8FA8&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=56D364&sideLabels=79C0FF&dates=8B949E&stroke=30363D" alt="GitHub streak" />
-  </picture>
+  <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=Anderson-Oloroso&hide_border=true&date_format=j%20M%5B%20Y%5D&background=0D1117&ring=34A867&fire=2A8FA8&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=56D364&sideLabels=79C0FF&dates=8B949E&stroke=30363D" alt="GitHub streak" />
 
   <br /><br />
 
   ### Gráfica de Contribuciones (Línea de Actividad)
   <a href="https://github.com/Anderson-Oloroso">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-graph-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/activity-graph-light.svg" />
-      <img src="./assets/activity-graph-dark.svg" alt="Gráfica de Contribuciones de GitHub - Anderson-Oloroso" width="100%" />
-    </picture>
+    <img src="./assets/activity-graph-dark.svg" alt="Gráfica de Contribuciones de GitHub - Anderson-Oloroso" width="100%" />
   </a>
 
   <br /><br />
